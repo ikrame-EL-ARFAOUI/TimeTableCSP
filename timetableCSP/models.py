@@ -23,12 +23,11 @@ class Teacher(models.Model):
 
 
 class Subject(models.Model):
-
     subject_id = models.CharField(max_length=1000, primary_key=True)
     subject_name = models.CharField(max_length=1000, null=True)
     subject_number_of_students = models.IntegerField(null=True)
     subject_groups = models.IntegerField(null=True)
-    subject_teacher = models.ForeignKey(Teacher,null=True,on_delete=models.SET_NULL())
+    subject_teacher = models.ForeignKey(Teacher,null=True,on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.subject_id + ' - ' + self.subject_name
