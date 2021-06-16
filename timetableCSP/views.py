@@ -25,3 +25,53 @@ def addRoom(request):
     return HttpResponse('room form')
 
 
+def updateSpeciality():
+    return None
+
+
+def updateRoom():
+    return None
+
+
+def updateTeacher():
+    return None
+
+
+def updateSubject():
+    return None
+
+
+def registerPage():
+    return None
+
+
+class Logout:
+    pass
+
+
+def loginPage():
+    return None
+
+
+class GenerateTimeTable:
+    pass
+
+
+class TimeTableView:
+    pass
+
+
+def deleteSubject():
+    return None
+
+
+def deleteTeacher():
+    return None
+
+
+def deleteRoom():
+    return None
+
+
+def deleteSpeciality():
+    return None

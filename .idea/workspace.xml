@@ -1,63 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="add db">
-      <change afterPath="$PROJECT_DIR$/static/css/add.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/tables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/timetable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/tables.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/12818-file-recover.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/20135-profesor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/21903-online-class-animation.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/3151-books.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/class-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/classroom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/courses-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/main_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/professor-01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/AddClass.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/AddClassCourse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/AddClassroom.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/AddCourse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/AddProfessor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/AddSectionClassrooms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ClassTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ClassroomTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/CourseTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/GenerateTimeTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ProfessorTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/TimeTable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ViewClass.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ViewSection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/deleteClass.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/deleteClassroom.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/deleteProfessor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/weekdays.html" afterDir="false" />
+    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="add views">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timetableCSP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,13 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1623802766369</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add views">
+      <created>1623805336976</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623805336976</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initializing the project" />
     <MESSAGE value="add db" />
     <MESSAGE value="adding urls mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding urls mapping" />
+    <MESSAGE value="add views" />
+    <option name="LAST_COMMIT_MESSAGE" value="add views" />
   </component>
 </project>
