@@ -1,0 +1,63 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="container-fluid">
+
+    <div class="search">
+        <input type="text" class="searchbox" placeholder="Search...">
+        <input type="submit" value="Search" class="searchButton">
+        <a href="{% url 'add-teacher' %}"><button class="searchButton">Add </button></a>
+
+    </div>
+
+
+
+        <div class="table  text-center">
+            <div class="table-header">
+
+                <div class="header__item filter__link">
+                  Teacher id
+
+                </div>
+                <div class="header__item filter__link">
+                   Teacher Name
+
+                </div>
+                <div class="header__item filter__link">
+                    Update
+
+                </div>
+                <div class="header__item filter__link">
+                    Delete
+
+                </div>
+            </div>
+            <div class="tab-content">
+                {% for teacher in teachers %}
+                <div class="table-row text-center">
+
+                    
+                    <div class="table-data">
+                        {{ teacher.teacher_id}}
+                    </div>
+                    <div class="table-data">
+                        {{ teacher.teacher_name }}
+                    </div>
+   
+                    <div class="table-data">
+                       <a href="{% url 'update-teacher' teacher.teacher_id %}" class="btn btn-sm btn-info">Update</a>
+                    </div>
+                    <div class="table-data">
+                       <a href="{% url 'delete-teacher' teacher.teacher_id %}" class="btn btn-sm btn-danger" >Remove</a>
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="container-fluid">
+
+    <div class="search">
+        <input type="text" class="searchbox" placeholder="Search...">
+        <input type="submit" value="Search" class="searchButton">
+        <a href="{% url 'add-speciality' %}"><button class="searchButton">Add Speciality </button></a>
+
+    </div>
+
+
+	<div class="table-responsive-lg">
+        <table class="table ">
+            <thead class="thead-dark">
+			<tr>
+                <div class="header__item filter__link" >
+                   <th scope="col" class="text-center">Speciality ID</th>
+
+                </div>
+                <div class="header__item filter__link">
+                  <th class="text-center" scope="col">Speciality Name</th>
+
+                </div>
+                <div class="header__item filter__link">
+                  <th class="text-center" scope="col">Speciality Subjects</th>
+
+                </div>
+
+                <div class="header__item filter__link">
+                    <th class="text-center" scope="col"> Update</th>
+
+                </div>
+                <div class="header__item filter__link">
+                     <th class="text-center" scope="col">Delete</th>
+
+                </div>
+
+			</tr>	
+            </thead>
+			
+            
+			
+                {% for speciality in specialities %}
+				
+				    <tr>
+                
+					
+                        <th scope="row" class="table-light text-center">{{ speciality.speciality_id }}</th>
+                    					
+						<th scope="row" class="table-dark text-center"  >{{ speciality.speciality_name }}</th>
+
+                        <th scope="row" class="table-dark text-center"  >
+                            {% for sub in speciality.subjects.all %}
+                            <p>{{ sub.subject_name }}</p>
+                            {% endfor %}
+                        </th>
+                  
+                        <th scope="row" class="table-light text-center"> <a href="{% url 'update-speciality' speciality.speciality_id %}" class="btn btn-sm btn-info">Update</a></th>
+                   
+                        <th scope="row" class="table-dark text-center"> <a href="{% url 'delete-speciality' speciality.speciality_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
+
+
+					</tr>
+				
+                
+                {% endfor %}
+            </tbody>
+        </table>
+</div>
+    </div>
+
+
+{% endblock %}

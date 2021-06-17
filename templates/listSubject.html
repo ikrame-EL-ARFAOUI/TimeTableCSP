@@ -1,0 +1,82 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="container-fluid">
+
+    <div class="search">
+        <input type="text" class="searchbox" placeholder="Search...">
+        <input type="submit" value="Search" class="searchButton">
+        <a href="{% url 'add-subject' %}"><button class="searchButton">Add Subject </button></a>
+
+    </div>
+
+
+	<div class="table-responsive-lg">
+        <table class="table ">
+            <thead class="thead-dark">
+			<tr>
+                <div class="header__item filter__link" >
+                   <th scope="col" class="text-center">Subject ID</th>
+
+                </div>
+                <div class="header__item filter__link">
+                  <th class="text-center" scope="col">Subject Name</th>
+
+                </div>
+                <div class="header__item filter__link">
+                   <th class="text-center" scope="col">number of students</th>
+
+                </div>
+                <div class="header__item filter__link" >
+                   <th class="text-center" scope="col">groups</th>
+
+                </div>
+                <div class="header__item filter__link">
+                   <th class="text-center" scope="col">Teacher</th>
+
+                </div>
+                <div class="header__item filter__link">
+                    <th class="text-center" scope="col"> Update</th>
+
+                </div>
+                <div class="header__item filter__link">
+                     <th class="text-center" scope="col">Delete</th>
+
+                </div>
+			</tr>	
+            </thead>
+			
+            
+			
+                {% for subject in subjects %}
+				
+				<tr>
+                
+					
+                        <th scope="row" class="table-light text-center">{{ subject.subject_id }}</th>
+                    
+					
+						<th scope="row" class="table-dark text-center"  >{{ subject.subject_name }}</th>
+                       
+						<th scope="row" class="table-light text-center"> {{ subject.subject_number_of_students}}</th>
+						<th scope="row" class="table-dark text-center"> {{ subject.subject_groups}}</th>
+                  
+                        <th scope="row" class="table-light text-center"> {{ subject.teacher}}</th>
+                   
+                        <th scope="row" class="table-dark text-center"> <a href="{% url 'update-subject' subject.subject_id %}" class="btn btn-sm btn-info">Update</a></th>
+                   
+                        <th scope="row" class="table-light text-center"> <a href="{% url 'delete-subject' subject.subject_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
+                
+					</tr>
+				
+                
+                {% endfor %}
+            </tbody>
+        </table>
+</div>
+    </div>
+
+
+{% endblock %}

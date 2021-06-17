@@ -8,7 +8,7 @@ urlpatterns = [
     path('teacher/list',views.teachersList, name='list-teacher'),
     path('subject/list', views.subjectsList, name='list-subject'),
     path('room/list', views.roomsList, name='list-room'),
-    path('speciality/list', views.specialitysList, name='list-speciality'),
+    path('speciality/list', views.specialitiesList, name='list-speciality'),
 
 
     path('', views.home, name='home'),
@@ -26,7 +26,7 @@ urlpatterns = [
     path('room/update/<str:pk>/', views.updateRoom, name='update-room'),
     path('speciality/update/<str:pk>/', views.updateSpeciality, name='update-speciality'),
 
-    path('subject/delete/<str:pk>/', views.deleteSubject, name='delete-Subject'),
+    path('subject/delete/<str:pk>/', views.deleteSubject, name='delete-subject'),
     path('teacher/delete/<str:pk>/', views.deleteTeacher, name='delete-teacher'),
     path('room/delete/<str:pk>/', views.deleteRoom, name='delete-room'),
     path('speciality/delete/<str:pk>/', views.deleteSpeciality, name='delete-speciality'),
