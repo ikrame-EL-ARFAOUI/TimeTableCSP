@@ -17,14 +17,16 @@
         <table class="table ">
             <thead class="thead-dark">
 			<tr>
-                <div class="header__item filter__link" >
-                   <th scope="col" class="text-center">Speciality ID</th>
-
-                </div>
                 <div class="header__item filter__link">
-                  <th class="text-center" scope="col">Speciality Name</th>
+                  <th class="text-center" scope="col">Speciality ID</th>
 
                 </div>
+
+                <div class="header__item filter__link" >
+                   <th scope="col" class="text-center">Speciality Name</th>
+
+                </div>
+
                 <div class="header__item filter__link">
                   <th class="text-center" scope="col">Speciality Subjects</th>
 
@@ -49,9 +51,9 @@
 				    <tr>
                 
 					
-                        <th scope="row" class="table-light text-center">{{ speciality.speciality_id }}</th>
+                        <th scope="row" class="table-dark text-center">{{ speciality.speciality_id }}</th>
                     					
-						<th scope="row" class="table-dark text-center"  >{{ speciality.speciality_name }}</th>
+						<th scope="row" class="table-light text-center"  >{{ speciality.speciality_name }}</th>
 
                         <th scope="row" class="table-dark text-center"  >
                             {% for sub in speciality.subjects.all %}
