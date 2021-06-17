@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/constraint_propagation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/csp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/csp_init.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/degree_heuristic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/forward_checking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/lcv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/timetableCSP/algorithme/mrv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623885526274</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="algorithme + using database data instead of the file data">
+      <created>1623935522537</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623935522537</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,6 +146,7 @@
     <MESSAGE value="views" />
     <MESSAGE value="venv" />
     <MESSAGE value="models" />
-    <option name="LAST_COMMIT_MESSAGE" value="models" />
+    <MESSAGE value="algorithme + using database data instead of the file data" />
+    <option name="LAST_COMMIT_MESSAGE" value="algorithme + using database data instead of the file data" />
   </component>
 </project>
