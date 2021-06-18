@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/timetableCSP/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/AddSubject.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddSubject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddSpeciality.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddSpeciality.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddTeacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddTeacher.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timetableCSP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624020955197</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="subject form">
+      <created>1624023225615</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1624023225615</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -217,6 +225,7 @@
     <MESSAGE value="adding class and timetable models" />
     <MESSAGE value="fixing an err in models" />
     <MESSAGE value="one teacher to many subjects" />
-    <option name="LAST_COMMIT_MESSAGE" value="one teacher to many subjects" />
+    <MESSAGE value="subject form" />
+    <option name="LAST_COMMIT_MESSAGE" value="subject form" />
   </component>
 </project>

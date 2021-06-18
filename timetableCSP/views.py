@@ -40,7 +40,20 @@ def roomsList(request):
 
 #add
 def addTeacher(request):
-    return render(request,'AddTeacher.html')
+    teacher = TeacherForm()
+    context = {'teacher': teacher}
+
+    if request.method == 'POST':
+        teacher = TeacherForm(request.POST)
+        if teacher.is_valid():
+            messages.success(request, 'Teacher has been added successfully.')
+            teacher.save()
+        else:
+            messages.success(request, 'Teacher already exists or you have added wrong attributes.')
+
+    return render(request, 'AddTeacher.html', context)
+
+
 def addSubject(request):
     subject = SubjectForm()
     context = {'subject': subject}
@@ -55,11 +68,37 @@ def addSubject(request):
 
     return render(request, 'AddSubject.html', context)
 
-def addSpeciality(request):
-    return render(request,'AddSpeciality.html')
-def addRoom(request):
-    return render(request,'AddRoom.html')
 
+
+def addSpeciality(request):
+
+    speciality = SpecialityForm()
+    context = {'speciality': speciality}
+
+    if request.method == 'POST':
+        speciality = SpecialityForm(request.POST)
+        if speciality.is_valid():
+            messages.success(request, 'Speciality has been added successfully.')
+            speciality.save()
+        else:
+            messages.success(request, 'Speciality already exists or you have added wrong attributes.')
+
+    return render(request, 'AddSpeciality.html', context)
+
+
+def addRoom(request):
+    room = RoomForm()
+    context = {'room': room}
+
+    if request.method == 'POST':
+        room = RoomForm(request.POST)
+        if room.is_valid():
+            messages.success(request, 'Room has been added successfully.')
+            room.save()
+        else:
+            messages.success(request, 'Room already exists or you have added wrong attributes.')
+
+    return render(request, 'AddRoom.html', context)
 
 def updateSpeciality():
     return None

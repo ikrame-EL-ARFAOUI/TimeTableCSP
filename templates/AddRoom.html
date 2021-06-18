@@ -1,4 +1,4 @@
-{% extends 'timetableapp/main.html' %}
+{% extends 'main.html' %}
 {% load static %}
 {% block content %}
      <div class="display">
@@ -10,14 +10,14 @@
                 <form method="POST" action="">
                     {% csrf_token %}
                     {% load crispy_forms_tags %}
-                    {{ classroom|crispy }}
+                    {{ room|crispy }}
                     <input type="submit" value="Save Class" class="saveButton">
                 </form>
             </div>
         </div>
 
             <img class="gif" alt="books" src="{% static 'media/21903-online-class-animation.gif' %}">
-            <div class="viewtable"><p>You can view your added classroom here.<a href="{% url 'classroom-view' %}">View Classrooms</a></p></div>
+            <div class="viewtable"><p>You can view your added classroom here.<a href="{% url 'list-room' %}">View Classrooms</a></p></div>
 
     </div>
 
