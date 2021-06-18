@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/listSpeciality.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listSpeciality.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +154,28 @@
       <option name="project" value="LOCAL" />
       <updated>1623953050074</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="improving specialities list style">
+      <created>1623962136291</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1623962136291</updated>
+    </task>
+    <task id="LOCAL-00013" summary="turn id to autofield">
+      <created>1623976170189</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1623976170189</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixing bugs in models">
+      <created>1623977120595</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1623977120595</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,6 +189,9 @@
     <MESSAGE value="algorithme + using database data instead of the file data" />
     <MESSAGE value="adding a sepeciality" />
     <MESSAGE value="adding lists templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding lists templates" />
+    <MESSAGE value="improving specialities list style" />
+    <MESSAGE value="turn id to autofield" />
+    <MESSAGE value="fixing bugs in models" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs in models" />
   </component>
 </project>
