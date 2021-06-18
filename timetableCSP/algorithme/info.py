@@ -61,8 +61,9 @@ INSTRUCTORS = []
 
 teachers = Teacher.objects.all()
 for teacher in teachers:
-	dict = {"name": teacher.teacher_name, "subject": teacher.subject_set.first().subject_name}
-	INSTRUCTORS.append(dict)
+	for subject in teacher.subject_set.all():
+		dict = {"name": teacher.teacher_name, "subject": subject.subject_name}
+		INSTRUCTORS.append(dict)
 
 
 # SUBJECTS = [ {"name":"Algorithms", "number_of_students": 60, "groups": 3, "teacher":"James Web"},
