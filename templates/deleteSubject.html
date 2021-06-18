@@ -1,14 +1,14 @@
-{% extends 'timetableapp/main.html' %}
+{% extends 'main.html' %}
 {% load static %}
 {% block content %}
 
     <div class="deleteBox">
-    <h3 id="deleteText">Do You want to delete "{{ delete.classroom_id }} - {{ delete.classroom_name }}"?</h3>
-        <form method="POST" action="{% url 'delete-classroom' delete.classroom_id %}">
+    <h3 id="deleteText">Do You want to delete "{{ delete_subject.subject_name }}"?</h3>
+        <form method="POST" action="{% url 'delete-subject' delete_subject.subject_id %}">
 
     <input class="deleteButton" type="submit" value="Delete">
         {% csrf_token %}
-    <a href="{% url 'classroom-view' %}">
+    <a href="{% url 'list-subject' %}">
     <input class="cancelButton" type="submit" value="Cancel">
     </a>
     </form>

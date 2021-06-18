@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/AddRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddRoom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/AddSpeciality.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddSpeciality.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/AddTeacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddTeacher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/deleteSubject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/deleteClass.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/deleteSpeciality.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/deleteClassroom.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/deleteRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/deleteProfessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/deleteTeacher.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timetableCSP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624023225615</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="teacher, speciality, room forms">
+      <created>1624024776978</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1624024776978</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -226,6 +235,7 @@
     <MESSAGE value="fixing an err in models" />
     <MESSAGE value="one teacher to many subjects" />
     <MESSAGE value="subject form" />
-    <option name="LAST_COMMIT_MESSAGE" value="subject form" />
+    <MESSAGE value="teacher, speciality, room forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="teacher, speciality, room forms" />
   </component>
 </project>
