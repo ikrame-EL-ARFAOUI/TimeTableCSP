@@ -5,20 +5,20 @@
     <div class="display">
         <div class="box">
             <div class="header">
-                Add Course
+                Add Subject
             </div>
             <div class="form">
                 <form method="POST" action="">
                     {% csrf_token %}
                     {% load crispy_forms_tags %}
-                    {{ course|crispy }}
-                    <input type="submit" value="Save Course" class="saveButton">
+                    {{ subject|crispy }}
+                    <input type="submit" value="Save Subject" class="saveButton">
                 </form>
             </div>
         </div>
 
             <img class="gif" alt="books" src="{% static 'media/3151-books.gif' %}">
-            <div class="viewtable"><p>You can view your added course here.<a href="#>View Courses</a></p></div>
+            <div class="viewtable"><p>You can view your added course here.<a href="{% url 'list-subject' %}">View Subjects</a></p></div>
 
     </div>
 

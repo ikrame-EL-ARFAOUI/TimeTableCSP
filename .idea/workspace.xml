@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/timetableCSP/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/info.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddSubject.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddSubject.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +31,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/timetableCSP/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/timetableCSP" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\EnsiasProjects\TimeTableCSP\timetableCSP" />
       <recent name="D:\EnsiasProjects\TimeTableCSP\algorithme" />
       <recent name="D:\EnsiasProjects\TimeTableCSP" />
       <recent name="D:\EnsiasProjects\TimeTableCSP\templates" />
@@ -188,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624020284400</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="one teacher to many subjects">
+      <created>1624020955197</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1624020955197</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -207,6 +216,7 @@
     <MESSAGE value="fixing bugs in models" />
     <MESSAGE value="adding class and timetable models" />
     <MESSAGE value="fixing an err in models" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing an err in models" />
+    <MESSAGE value="one teacher to many subjects" />
+    <option name="LAST_COMMIT_MESSAGE" value="one teacher to many subjects" />
   </component>
 </project>

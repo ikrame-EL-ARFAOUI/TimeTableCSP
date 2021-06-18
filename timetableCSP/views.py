@@ -1,6 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Teacher,Subject,Speciality,Room
+from .forms import *
+from django.contrib import messages
+
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
+from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login, logout
+from .forms import *
+from .models import *
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
 
@@ -30,7 +42,19 @@ def roomsList(request):
 def addTeacher(request):
     return render(request,'AddTeacher.html')
 def addSubject(request):
-    return render(request,'AddSubject.html')
+    subject = SubjectForm()
+    context = {'subject': subject}
+
+    if request.method == 'POST':
+        subject = SubjectForm(request.POST)
+        if subject.is_valid():
+            messages.success(request, 'Subject has been added successfully.')
+            subject.save()
+        else:
+            messages.success(request, 'Subject already exists or you have added wrong attributes.')
+
+    return render(request, 'AddSubject.html', context)
+
 def addSpeciality(request):
     return render(request,'AddSpeciality.html')
 def addRoom(request):
