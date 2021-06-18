@@ -12,7 +12,7 @@ class Room(models.Model):
     room_name = models.CharField(max_length=2000, null=True)
     room_max_students = models.IntegerField(null=True)
     def __str__(self):
-        return self.room_id + ' - ' + self.room_name
+        return self.room_name
 
 
 class Teacher(models.Model):
@@ -31,7 +31,7 @@ class Subject(models.Model):
     teacher = models.ForeignKey(Teacher,null=True,on_delete=models.SET_NULL)
 
     def __str__(self):
-        return self.subject_id + ' - ' + self.subject_name
+        return self.subject_name
 
 class Speciality(models.Model):
 
@@ -40,7 +40,7 @@ class Speciality(models.Model):
     subjects = models.ManyToManyField(Subject, null=True)
 
     def __str__(self):
-        return self.speciality_id
+        return self.speciality_name
 
 
 
