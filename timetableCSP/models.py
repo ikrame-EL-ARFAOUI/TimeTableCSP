@@ -93,5 +93,5 @@ class Class(models.Model):
     type_of_class = models.CharField(max_length=2000, null=True)
 
     def __str__(self):
-        return str(self.speciality.speciality_name) + "," + str(self.subject.subject_name) + "\n" + str(self._teacher) + "," \
-               + str(self.type_of_class) + "," + str(self.room.room_name) + " \n"
+        return str(self.speciality) + "," + str(self.subject) + "\n" + str(self.teacher) + "," \
+               + str(self.type_of_class) + "," + str(self.room) + " \n"

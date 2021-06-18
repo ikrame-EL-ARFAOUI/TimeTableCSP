@@ -4,7 +4,6 @@
     <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/timetableCSP/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623977120595</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="adding class and timetable models">
+      <created>1624018683579</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1624018683579</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -192,6 +198,7 @@
     <MESSAGE value="improving specialities list style" />
     <MESSAGE value="turn id to autofield" />
     <MESSAGE value="fixing bugs in models" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs in models" />
+    <MESSAGE value="adding class and timetable models" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding class and timetable models" />
   </component>
 </project>
