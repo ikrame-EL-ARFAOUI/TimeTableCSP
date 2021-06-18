@@ -8,7 +8,7 @@ from multiselectfield import MultiSelectField
 
 class Room(models.Model):
 
-    room_id = models.CharField(max_length=2000, primary_key=True)
+    room_id = models.AutoField(primary_key=True)
     room_name = models.CharField(max_length=2000, null=True)
     room_max_students = models.IntegerField(null=True)
     def __str__(self):
@@ -16,7 +16,7 @@ class Room(models.Model):
 
 
 class Teacher(models.Model):
-    teacher_id = models.CharField(max_length=2000,primary_key=True)
+    teacher_id = models.AutoField(primary_key=True)
     teacher_name = models.CharField(max_length=2000, null=True)
     def __str__(self):
         return self.teacher_name
@@ -24,7 +24,7 @@ class Teacher(models.Model):
 
 class Subject(models.Model):
 
-    subject_id = models.CharField(max_length=1000, primary_key=True)
+    subject_id = models.AutoField(primary_key=True)
     subject_name = models.CharField(max_length=1000, null=True)
     subject_number_of_students = models.IntegerField(null=True)
     subject_groups = models.IntegerField(null=True)
@@ -35,7 +35,7 @@ class Subject(models.Model):
 
 class Speciality(models.Model):
 
-    speciality_id = models.CharField(max_length=2000, primary_key=True)
+    speciality_id = models.AutoField(primary_key=True)
     speciality_name = models.CharField(max_length=2000, null=True)
     subjects = models.ManyToManyField(Subject, null=True)
 
