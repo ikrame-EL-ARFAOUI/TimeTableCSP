@@ -1,144 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
-    <meta charset="UTF-8">
-    {% load static %}
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-
 
+
+    width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Timetable | CSP | HomePage</title>
+    
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
-	<link href="{% static 'css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'css/tables.css' %}" rel="stylesheet">
-    <link href="{% static 'css/add.css' %}" rel="stylesheet">
-    <link href="{% static 'css/nav.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" src="extensions/sticky-header/bootstrap-table-sticky-header.css">
-    <script src="extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
-
-
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+	<link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="{% static 'media/favicon.png' %}">
 </head>
-{% block content %}
-<title>Home - Activity Scheduling App</title>
-<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <button class=" btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse collapse" data-toggle="collapse" aria-expanded="false" id="navbarNav">
-        <ul class="nav navbar-nav">
-          <li class="nav-item text-center active">
-            <a class="nav-link link" href="#">Home <span class="sr-only">(current)</span></a>
-
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link link" href="#course_display">Subjects</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link link" href="#professor_display">Teachers</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link link " href="#classroom_display">Classrooms</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link link " href="#class_display">Specialities</a>
-          </li>
-
-        </ul>
-      </div>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
-</nav>
-
-    <img id="branding" src="{% static 'media/main_image.png' %}">
-
-    <div><h1 id="tag">Interactive TimeTable</h1></div>
-    <div><p id="para1">this application is used to create interactive TimeTables for universities based on CSP algorithms</p></div>
-    <a href="#"><input type="button" class="button" value="Generate Timetable"></a>
-
-    <a href="#courses"><input type="button" class="info" value="Add Information"></a>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <hr>
-    <div id="course_display">
-        <div id="courses">
-            <h3 id="tag_course">Subjects</h3>
-            <p id="para_course">You can easily add Subjects into database by just clicking the button below. This data will be retrieved while generating the time table.</p>
-            <a  href="{% url 'add-subject' %}"><button class="course_button" >Add Subject</button></a>
-            <a href="{% url 'list-subject' %}"><input type="button" class="info" value="Subjects list"></a>
-        </div>
-        <div><img id="course_img" src="{% static 'media/courses-01.png' %}"></div>
     </div>
+    <!-- end of preloader -->
+    
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-- Navigation -->
 
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 
-    <div id="professor_display">
-        <div id="professor">
-            <h3 id="prof_tag">Teachers</h3>
-            <p id="prof_para">Professors data will be saved in the database. You will be directed to the professor form where you will add the information about professor.</p>
-            <a href="{% url 'add-teacher' %}" ><input type="button" class="prof_button" value="Add Professor"></a>
-            <a href="{% url 'list-teacher' %}"><input type="button" class="info" value="Teachers list"></a>
+	
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+
+        <!-- Image Logo -->
+       <a  href="#"><img src="{% static 'media/ensias.png' %}" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#subjects">Subjects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#teachers">Teachers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#classrooms">Classrooms</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link page-scroll" href="#specialities">Specialities</a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Terms Conditions</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Privacy Policy</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+               
+            </ul>
+
+            </span>
         </div>
-         <div><img alt="professor" id="prof_img" src="{% static 'media/professor-01.png' %}"></div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
 
-    <div id="classroom_display">
-        <div id="courses">
-            <h3 id="tag_course">Classrooms</h3>
-            <p id="para_course">In this app, You have facility to add more than one class rooms at a time and it will generate the suitable timetable for you which you can access any time in your account.</p>
-            <a href="{% url 'add-room' %}""><button class="course_button">Add Classroom</button></a>
-            <a href="{% url 'list-room' %}"><input type="button" class="info" value="Rooms list"></a>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                           <h1><span class="turquoise">Time table Application</span> </h1>
+                            <p class="p-large">This Application Is Used To Create Interactive TimeTables For Universities Based On CSP Algorithms</p>
+                            <a class="btn-solid-lg page-scroll" href="#services">GENERATE TIMETABLE</a>
+							 <a class="btn-solid-lg page-scroll" href="#services">TIMETABLES LIST</a>
 
-        </div>
-         <div><img  id="course_img" src="{% static 'media/classroom.png' %}"></div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div id="class_display">
-        <div id="professor">
-            <h3 id="prof_tag">Specialities</h3>
-            <p id="prof_para">In this app, You have facility to add more than one classes at a time and it will generate the suitable timetable for you which you can access any time in your account.</p>
-            <a href="{% url 'add-speciality' %}"><input type="button" class="prof_button" value="Add Speciality"></a>
-            <a href="{% url 'list-speciality' %}"><input type="button" class="info" value="Specialities list"></a>
-        </div>
-         <div><img alt="class" id="prof_img" src="{% static 'media/class-01.png' %}"></div>
-    </div>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{% static 'media/header-teamwork.svg' %}" alt="alternative">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
 
-<br>
-<br>
+    <!-- Customers -->
+    <div class="slider-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                   
+                        </div> <!-- end of swiper container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider-1 -->
+    <!-- end of customers -->
 
 
-{% endblock %}
+    <!-- Services -->
+    <div id="services" class="cards-1">
+        <div class="container">
+            <div class="row">
+               
+
+                   
+                    
+
+                   
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of services -->
 
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Details 1 -->
+	<div id="subjects">
+    <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Subjects</h2>
+                        <p>You Can Easily Add Subjects Into Database By Just Clicking The Button Below. This Data Will Be Retrieved While Generating The Time Table.</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">SUBJECTS LIST</a>
+						 <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ADD SUBJECT</a>
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'media/details-1-office-worker.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+	</div>
+    <!-- end of details 1 -->
+
+    
+    <!-- Details 2 -->
+	<div id="teachers">
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'media/details-2-office-team-work.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Teachers</h2>
+						<p>Professors Data Will Be Saved In The Database. You Will Be Directed To The Professor Form Where You Will Add The Information About Professor</p>
+
+                     
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">TEACHERS LIST</a>
+						<a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">ADD TEACHER</a>
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+	</div>
+    <!-- end of details 2 -->
+	
+	
+	  <!-- Details 1 -->
+	  <div id="classrooms">
+    <div class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Classrooms</h2>
+                        <p>In This App, You Have Facility To Add More Than One Class Rooms At A Time And It Will Generate The Suitable Timetable For You Which You Can Access Any Time In Your Account.</p>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ROOMS LIST</a>
+						 <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ADD ROOM</a>
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'media/details-1-office-worker.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of details 1 -->
+	</div>
+	
+	<!-- Details 2 -->
+	<div id="specialities">
+    <div class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'media/details-2-office-team-work.svg' %}" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Specialities</h2>
+						<p>In This App, You Have Facility To Add More Than One Classes At A Time And It Will Generate The Suitable Timetable For You Which You Can Access Any Time In Your Account.</p>
+
+                     
+                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">SPECIALITIES LIST</a>
+						<a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ADD SPECIALITY</a>
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+	</div>
+    <!-- end of details 2 -->
+
+    
+    
+
+
+   
+               
+
+
+    
+
+
+                               
+
+   
+
+                
+
+
+    	
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %}"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{% static 'js/popper.min.js' %}"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script> <!-- Bootstrap framework -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{% static 'js/swiper.min.js' %}"></script> <!-- Swiper for image and text sliders -->
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="{% static 'js/validator.min.js' %}"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="{% static 'js/scripts.js' %}"></script> <!-- Custom scripts -->
+</body>
+</html>
