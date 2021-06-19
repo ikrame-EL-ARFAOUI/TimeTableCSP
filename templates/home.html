@@ -33,7 +33,7 @@
 	<link href="{% static 'css/styles.css' %}" rel="stylesheet">
 	
 	<!-- Favicon  -->
-    <link rel="icon" href="{% static 'media/favicon.png' %}">
+    <link rel="icon" href="{% static 'media/ensias.png' %}">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
@@ -174,8 +174,8 @@
                     <div class="text-container">
                         <h2>Subjects</h2>
                         <p>You Can Easily Add Subjects Into Database By Just Clicking The Button Below. This Data Will Be Retrieved While Generating The Time Table.</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">SUBJECTS LIST</a>
-						 <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ADD SUBJECT</a>
+                        <a class="btn-solid-reg " href="{% url 'list-subject' %}">SUBJECTS LIST</a>
+						 <a class="btn-solid-reg " href="{% url 'add-subject' %}">ADD SUBJECT</a>
 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -207,8 +207,8 @@
 						<p>Professors Data Will Be Saved In The Database. You Will Be Directed To The Professor Form Where You Will Add The Information About Professor</p>
 
                      
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">TEACHERS LIST</a>
-						<a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">ADD TEACHER</a>
+                        <a class="btn-solid-reg " href="{% url 'list-teacher' %}">TEACHERS LIST</a>
+						<a class="btn-solid-reg " href="{% url 'add-teacher' %}">ADD TEACHER</a>
 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -228,8 +228,8 @@
                     <div class="text-container">
                         <h2>Classrooms</h2>
                         <p>In This App, You Have Facility To Add More Than One Class Rooms At A Time And It Will Generate The Suitable Timetable For You Which You Can Access Any Time In Your Account.</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ROOMS LIST</a>
-						 <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ADD ROOM</a>
+                        <a class="btn-solid-reg " href="{% url 'list-room' %}">ROOMS LIST</a>
+						 <a class="btn-solid-reg " href="{% url 'add-room' %}">ADD ROOM</a>
 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -260,8 +260,8 @@
 						<p>In This App, You Have Facility To Add More Than One Classes At A Time And It Will Generate The Suitable Timetable For You Which You Can Access Any Time In Your Account.</p>
 
                      
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">SPECIALITIES LIST</a>
-						<a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">ADD SPECIALITY</a>
+                        <a class="btn-solid-reg " href="{% url 'list-speciality' %}">SPECIALITIES LIST</a>
+						<a class="btn-solid-reg " href="{% url 'add-speciality' %}">ADD SPECIALITY</a>
 
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->

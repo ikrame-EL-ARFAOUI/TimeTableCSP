@@ -1,47 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="updating data">
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/fontawesome-all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/swiper.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.magnific-popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/validator.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/contact-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/details-1-office-worker.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/details-2-office-team-work.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/details-lightbox-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/details-lightbox-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/down-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/ensias.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/ex-header-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/header-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/header-teamwork.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/services-icon-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/services-icon-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/services-icon-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/statement-icon-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/team-member-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/team-member-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/team-member-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/team-member-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/testimonial-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/testimonial-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/testimonial-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/testimonials-2-men-talking.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/testimonials-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/up-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/media/video-frame.svg" afterDir="false" />
+    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="adding homePage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
@@ -119,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623795219405</updated>
       <workItem from="1624141798236" duration="1754000" />
-      <workItem from="1624144337645" duration="1713000" />
+      <workItem from="1624144337645" duration="2745000" />
     </task>
     <task id="LOCAL-00001" summary="initializing the project">
       <created>1623800680034</created>
@@ -268,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624029457924</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="adding homePage">
+      <created>1624146143170</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1624146143170</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +274,7 @@
     <MESSAGE value="teacher, speciality, room forms" />
     <MESSAGE value="update and delete forms" />
     <MESSAGE value="updating data" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating data" />
+    <MESSAGE value="adding homePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding homePage" />
   </component>
 </project>
