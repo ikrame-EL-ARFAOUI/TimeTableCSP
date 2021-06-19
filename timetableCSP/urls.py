@@ -34,7 +34,8 @@ urlpatterns = [
     #path('timetable/', views.TimeTable, name='timetable'),
     path('generate-timetable/<str:id>/', views.GenerateTimeTable, name='generate-timetable'),
     #path('addweek-info/', views.WeekDayFormView, name='weekday-info'),
-    path('timetable/<str:id>/', views.TimeTableView, name='timetable')
+
+    path('timetable/<str:pk>/', views.TimeTableView, name='timetable')
 
 
 

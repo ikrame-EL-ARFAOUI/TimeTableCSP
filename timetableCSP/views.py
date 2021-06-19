@@ -173,8 +173,7 @@ class GenerateTimeTable:
     pass
 
 
-class TimeTableView:
-    pass
+
 
 
 def deleteSubject(request, pk):
@@ -214,3 +213,23 @@ def deleteSpeciality(request, pk):
         return redirect('speciality/list')
 
     return render(request, 'deleteSpeciality.html', context)
+
+
+def TimeTableView(request, pk):
+    MEETING_TIMES = ["08:30 - 09:50",
+                     "10:00 - 11:20",
+                     "11:40 - 13:00",
+                     "13:30 - 14:50",
+                     "15:00 - 16:20",
+                     "16:30 - 17:50"]
+    DAYS = ["Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"]
+    timetable = TimeTable.objects.get(timetable_id = pk)
+    classes = timetable.class_set.all()
+    context={'classes': classes,
+             'timeSlots' : MEETING_TIMES,
+             'DAYS' : DAYS}
+    return render(request, 'timetable-view.html',context)

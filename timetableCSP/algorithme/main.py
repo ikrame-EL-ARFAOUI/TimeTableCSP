@@ -7,6 +7,15 @@ from mrv import *
 from forward_checking import *
 from constraint_propagation import *
 
+import os
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'projet.settings'
+
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+
+from timetableCSP.models import TimeTable,Class as CL,Room, Subject,Speciality,Teacher
+
 
 
 
@@ -39,6 +48,54 @@ print("Counter for backtracking with Constraint Propagation: " + str(get_counter
 
 result = result_constraint_propagation
 
+#========saving timetable and classes =========================
+
+TimeSlots = ["08:30 - 09:50",
+             "10:00 - 11:20",
+             "11:40 - 13:00",
+             "13:30 - 14:50",
+             "15:00 - 16:20",
+             "16:30 - 17:50"]
+
+timetable = TimeTable.objects.create()
+# self._speciality = speciality
+#         self._subject = subject
+#         self._teacher = self._subject._teacher
+#         self._number_of_students = self._subject._number_of_students
+#         self._room = room
+#         self._time = time
+#         self._day = day
+#         self._type_of_class = type_of_class
+
+for seance in result.keys():
+
+    cl = CL()
+    cl.room = Room.objects.get(room_name = seance._room[0])
+    cl.speciality = Speciality.objects.get(speciality_name = seance._speciality._name)
+    cl.subject = Subject.objects.get(subject_name = seance._subject._name)
+    cl.teacher = Teacher.objects.get(teacher_name= seance._teacher )
+    cl.number_of_students = seance._number_of_students
+    cl.type_of_class = seance._type_of_class
+    cl.map_key = result[seance]
+
+
+    cl.timeSlot = TimeSlots[result[seance] % 6]
+    cl.timetable = timetable
+    if result[seance] < 6:
+        cl.day = "Monday"
+    elif result[seance] < 12 and result[seance]>=6:
+        cl.day = "Tuesday"
+    elif result[seance] < 18 and result[seance]>=12:
+        cl.day = "Wednesday"
+    elif result[seance] < 24 and result[seance]>=18:
+        cl.day = "Thursday"
+    elif result[seance] >= 24:
+        cl.day = "Friday"
+    cl.save()
+
+
+
+#==============================================================
 
 monday, tuesday, wednesday, thursday, friday = [], [], [], [], []
 days = [monday, tuesday, wednesday, thursday, friday]

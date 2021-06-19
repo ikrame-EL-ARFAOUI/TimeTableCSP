@@ -57,12 +57,12 @@ class Speciality(models.Model):
 class TimeTable(models.Model):
     timetable_id = models.AutoField(primary_key=True)
     timetable_name = models.CharField(max_length=2000, null=True)
-    date_creation = models.DateTimeField(null=True)
+    date_creation = models.DateTimeField(auto_now_add=True,null=True)
 
     # user = models.ForeignKey(User)
 
     def __str__(self):
-        return self.timetable_name
+        return self.timetable_id
 
 
 class Class(models.Model):
@@ -91,6 +91,8 @@ class Class(models.Model):
     timeSlot = models.CharField(max_length=2000, null=True, choices=TimeSlots)
     day = models.CharField(max_length=2000, null=True, choices=DAYS)
     type_of_class = models.CharField(max_length=2000, null=True)
+    timetable = models.ForeignKey(TimeTable, null=True, on_delete=models.SET_NULL)
+    map_key =models.IntegerField(null = True)
 
     def __str__(self):
         return str(self.speciality) + "," + str(self.subject) + "\n" + str(self.teacher) + "," \

@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/timetable-view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +35,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/timetableCSP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\EnsiasProjects\TimeTableCSP\templates" />
       <recent name="D:\EnsiasProjects\TimeTableCSP\timetableCSP" />
       <recent name="D:\EnsiasProjects\TimeTableCSP\algorithme" />
       <recent name="D:\EnsiasProjects\TimeTableCSP" />
-      <recent name="D:\EnsiasProjects\TimeTableCSP\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\EnsiasProjects\TimeTableCSP\timetableCSP\algorithme" />
@@ -216,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624028326662</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="updating data">
+      <created>1624029457924</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1624029457924</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -239,6 +252,7 @@
     <MESSAGE value="subject form" />
     <MESSAGE value="teacher, speciality, room forms" />
     <MESSAGE value="update and delete forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="update and delete forms" />
+    <MESSAGE value="updating data" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating data" />
   </component>
 </project>
