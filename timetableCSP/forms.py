@@ -34,6 +34,11 @@ class SpecialityForm(forms.ModelForm):
         model = Speciality
         fields = ['speciality_name', 'subjects']
 
+class TimeTableForm(forms.ModelForm):
+    class Meta:
+        model = TimeTable
+        fields = ['timetable_name']
+
 
 
 

@@ -1,0 +1,78 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+    <div class="container-fluid">
+
+    <div class="search">
+        <input type="text" class="searchbox" placeholder="Search...">
+        <input type="submit" value="Search" class="searchButton">
+        <a href="{% url 'add-teacher' %}"><button class="searchButton">Add </button></a>
+
+    </div>
+
+
+
+        <div class="table  text-center">
+            <div class="table-header">
+
+                <div class="header__item filter__link">
+                  Timetable id
+
+                </div>
+                <div class="header__item filter__link">
+                   Timetable Name
+
+                </div>
+                <div class="header__item filter__link">
+                   created on
+
+                </div>
+                <div class="header__item filter__link">
+                    View Timetable
+
+                </div>
+                <div class="header__item filter__link">
+                    Update
+
+                </div>
+                <div class="header__item filter__link">
+                    Delete
+
+                </div>
+            </div>
+            <div class="tab-content">
+                {% for timetable in timetables %}
+                <div class="table-row text-center">
+
+                    
+                    <div class="table-data">
+                        {{ timetable.timetable_id}}
+                    </div>
+                    <div class="table-data">
+                        {{ timetable.timetable_name }}
+                    </div>
+
+                    <div class="table-data">
+                        {{ timetable.date_creation }}
+                    </div>
+
+                    <div class="table-data">
+                       <a href="{% url 'timetable' timetable.timetable_id %}" class="btn btn-sm btn-info">View timetable</a>
+                    </div>
+                    <div class="table-data">
+                       <a href="{% url 'update-timetable' timetable.timetable_id %}" class="btn btn-sm btn-warning">Update Name</a>
+                    </div>
+                    <div class="table-data">
+                       <a href="{% url 'delete-timetable' timetable.timetable_id %}" class="btn btn-sm btn-danger" >Remove</a>
+                    </div>
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

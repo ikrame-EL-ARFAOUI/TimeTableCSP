@@ -164,7 +164,7 @@ def updateTeacher(request, pk):
 
 def updateSubject(request, pk):
 
-    form = Subject.objects.get(subject_id=pk)
+    form = Sj.objects.get(subject_id=pk)
     subject = SubjectForm(instance=form)
     context = {'subject': subject}
     if request.method == 'POST':
@@ -185,11 +185,6 @@ class Logout:
 
 def loginPage():
     return None
-
-
-
-
-
 
 
 
@@ -349,3 +344,32 @@ def GenerateTimeTable(request):
     print(table)
 
     return redirect('timetable', pk=timetable.timetable_id)
+
+
+def timetablesList(request):
+    timetables = TimeTable.objects.all()
+    context = {'timetables': timetables}
+    return render(request, 'listTimetables.html', context)
+
+
+def updateTimetable(request,pk):
+
+    form = TimeTable.objects.get(timetable_id=pk)
+    timetable = TimeTableForm(instance=form)
+    context = {'timetable': timetable}
+    if request.method == 'POST':
+        timetable = TimeTableForm(request.POST, instance=form)
+        if timetable.is_valid():
+            timetable.save()
+            return redirect('list-timetable')
+    return render(request, 'UpdateTimetable.html', context)
+
+
+def deleteTimetable(request,pk):
+    delete_timetable = TimeTable.objects.get(timetable_id=pk)
+    context = {'delete_timetable': delete_timetable}
+    if request.method == 'POST':
+        delete_timetable.delete()
+        return redirect('list-timetable')
+
+    return render(request, 'deleteTimetable.html', context)
