@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/constraint_propagation.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/constraint_propagation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/csp.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/csp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/csp_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/csp_init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/degree_heuristic.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/degree_heuristic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/forward_checking.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/forward_checking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/lcv.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/lcv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/mrv.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/mrv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timetableCSP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624029457924</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="adding 'generate timetable' feature">
+      <created>1624151550249</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1624151550249</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -258,6 +254,7 @@
     <MESSAGE value="teacher, speciality, room forms" />
     <MESSAGE value="update and delete forms" />
     <MESSAGE value="updating data" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating data" />
+    <MESSAGE value="adding 'generate timetable' feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding 'generate timetable' feature" />
   </component>
 </project>
