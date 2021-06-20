@@ -1,0 +1,220 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4c9fe2ab-4d77-4214-b0e5-f59aaa7be117\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/templates/timetable-view.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/db.sqlite3\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/db.sqlite3\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/timetableCSP/admin.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/timetableCSP/admin.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/timetableCSP/algorithme/main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/timetableCSP/algorithme/main.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/timetableCSP/models.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/timetableCSP/models.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/timetableCSP/urls.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/timetableCSP/urls.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/timetableCSP/views.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/timetableCSP/views.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1u0Gg4qgtxW4qAzorNzX8iSN7KR\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/templates\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\EnsiasProjects\\TimeTableCSP\\templates\" />\r\n      <recent name=\"D:\\EnsiasProjects\\TimeTableCSP\\timetableCSP\" />\r\n      <recent name=\"D:\\EnsiasProjects\\TimeTableCSP\\algorithme\" />\r\n      <recent name=\"D:\\EnsiasProjects\\TimeTableCSP\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\EnsiasProjects\\TimeTableCSP\\timetableCSP\\algorithme\" />\r\n      <recent name=\"D:\\EnsiasProjects\\TimeTableCSP\\timetableCSP\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\">\r\n      <module name=\"TimeTableCSP\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"D:\\EnsiasProjects\\TimeTableCSP\\venv\\Scripts\\python.exe\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/timetableCSP\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"D:\\EnsiasProjects\\TimeTableCSP\\timetableCSP\\algorithme\\main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4c9fe2ab-4d77-4214-b0e5-f59aaa7be117\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1623795219405</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1623795219405</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"initializing the project\">\r\n      <created>1623800680034</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623800680034</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"add db\">\r\n      <created>1623800939139</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623800939139</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"adding urls mapping\">\r\n      <created>1623802766369</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623802766369</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"add views\">\r\n      <created>1623805336976</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623805336976</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"views\">\r\n      <created>1623807727093</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623807727093</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"models\">\r\n      <created>1623874350638</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623874350638</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"venv\">\r\n      <created>1623876934376</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623876934407</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"models\">\r\n      <created>1623885526274</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623885526274</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"algorithme + using database data instead of the file data\">\r\n      <created>1623935522537</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623935522537</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"adding a sepeciality\">\r\n      <created>1623935985994</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623935985994</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"adding lists templates\">\r\n      <created>1623953050074</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623953050074</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"improving specialities list style\">\r\n      <created>1623962136291</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623962136291</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"turn id to autofield\">\r\n      <created>1623976170189</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623976170189</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"fixing bugs in models\">\r\n      <created>1623977120595</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1623977120595</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"adding class and timetable models\">\r\n      <created>1624018683579</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1624018683579</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"fixing an err in models\">\r\n      <created>1624020284400</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1624020284400</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"one teacher to many subjects\">\r\n      <created>1624020955197</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1624020955197</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"subject form\">\r\n      <created>1624023225615</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1624023225615</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"teacher, speciality, room forms\">\r\n      <created>1624024776978</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1624024776978</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"update and delete forms\">\r\n      <created>1624028326662</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1624028326662</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"updating data\">\r\n      <created>1624029457924</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1624029457924</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"22\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"initializing the project\" />\r\n    <MESSAGE value=\"add db\" />\r\n    <MESSAGE value=\"adding urls mapping\" />\r\n    <MESSAGE value=\"add views\" />\r\n    <MESSAGE value=\"views\" />\r\n    <MESSAGE value=\"venv\" />\r\n    <MESSAGE value=\"models\" />\r\n    <MESSAGE value=\"algorithme + using database data instead of the file data\" />\r\n    <MESSAGE value=\"adding a sepeciality\" />\r\n    <MESSAGE value=\"adding lists templates\" />\r\n    <MESSAGE value=\"improving specialities list style\" />\r\n    <MESSAGE value=\"turn id to autofield\" />\r\n    <MESSAGE value=\"fixing bugs in models\" />\r\n    <MESSAGE value=\"adding class and timetable models\" />\r\n    <MESSAGE value=\"fixing an err in models\" />\r\n    <MESSAGE value=\"one teacher to many subjects\" />\r\n    <MESSAGE value=\"subject form\" />\r\n    <MESSAGE value=\"teacher, speciality, room forms\" />\r\n    <MESSAGE value=\"update and delete forms\" />\r\n    <MESSAGE value=\"updating data\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"updating data\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9cf18a80c1e883cc63d73356dca41e61cbd439a3)
++++ b/.idea/workspace.xml	(date 1624138651943)
+@@ -2,12 +2,7 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/templates/timetable-view.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/timetableCSP/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/admin.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/main.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/timetableCSP/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/models.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/timetableCSP/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/urls.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/timetableCSP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/views.py" afterDir="false" />
+     </list>
+@@ -229,7 +224,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1624029457924</updated>
+     </task>
+-    <option name="localTasksCounter" value="22" />
++    <task id="LOCAL-00022" summary="adding timetable view">
++      <created>1624107895404</created>
++      <option name="number" value="00022" />
++      <option name="presentableId" value="LOCAL-00022" />
++      <option name="project" value="LOCAL" />
++      <updated>1624107895404</updated>
++    </task>
++    <option name="localTasksCounter" value="23" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+@@ -253,6 +255,7 @@
+     <MESSAGE value="teacher, speciality, room forms" />
+     <MESSAGE value="update and delete forms" />
+     <MESSAGE value="updating data" />
+-    <option name="LAST_COMMIT_MESSAGE" value="updating data" />
++    <MESSAGE value="adding timetable view" />
++    <option name="LAST_COMMIT_MESSAGE" value="adding timetable view" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: timetableCSP/views.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from django.shortcuts import render\r\nfrom django.http import HttpResponse\r\nfrom .models import Teacher, Subject, Speciality, Room\r\nfrom .forms import *\r\nfrom django.contrib import messages\r\n\r\nfrom django.shortcuts import render, redirect\r\nfrom django.http import HttpResponse\r\nfrom django.contrib import messages\r\nfrom django.contrib.auth.forms import UserCreationForm\r\nfrom django.contrib.auth import authenticate, login, logout\r\nfrom .forms import *\r\nfrom .models import *\r\nfrom django.contrib.auth.decorators import login_required\r\n\r\n\r\n# Create your views here.\r\n\r\n# home\r\ndef home(request):\r\n    return render(request, 'home.html')\r\n\r\n\r\n# lists\r\ndef teachersList(request):\r\n    teachers = Teacher.objects.all()\r\n    context = {'teachers': teachers}\r\n    return render(request, 'listTeacher.html', context)\r\n\r\n\r\ndef subjectsList(request):\r\n    subjects = Subject.objects.all()\r\n    context = {'subjects': subjects}\r\n    return render(request, 'listSubject.html', context)\r\n\r\n\r\ndef specialitiesList(request):\r\n    specialities = Speciality.objects.all()\r\n    context = {'specialities': specialities}\r\n    return render(request, 'listSpeciality.html', context)\r\n\r\n\r\ndef roomsList(request):\r\n    rooms = Room.objects.all()\r\n    context = {'rooms': rooms}\r\n    return render(request, 'listRoom.html', context)\r\n\r\n\r\n# add\r\ndef addTeacher(request):\r\n    teacher = TeacherForm()\r\n    context = {'teacher': teacher}\r\n\r\n    if request.method == 'POST':\r\n        teacher = TeacherForm(request.POST)\r\n        if teacher.is_valid():\r\n            messages.success(request, 'Teacher has been added successfully.')\r\n            teacher.save()\r\n        else:\r\n            messages.success(request, 'Teacher already exists or you have added wrong attributes.')\r\n\r\n    return render(request, 'AddTeacher.html', context)\r\n\r\n\r\ndef addSubject(request):\r\n    subject = SubjectForm()\r\n    context = {'subject': subject}\r\n\r\n    if request.method == 'POST':\r\n        subject = SubjectForm(request.POST)\r\n        if subject.is_valid():\r\n            messages.success(request, 'Subject has been added successfully.')\r\n            subject.save()\r\n        else:\r\n            messages.success(request, 'Subject already exists or you have added wrong attributes.')\r\n\r\n    return render(request, 'AddSubject.html', context)\r\n\r\n\r\ndef addSpeciality(request):\r\n    speciality = SpecialityForm()\r\n    context = {'speciality': speciality}\r\n\r\n    if request.method == 'POST':\r\n        speciality = SpecialityForm(request.POST)\r\n        if speciality.is_valid():\r\n            messages.success(request, 'Speciality has been added successfully.')\r\n            speciality.save()\r\n        else:\r\n            messages.success(request, 'Speciality already exists or you have added wrong attributes.')\r\n\r\n    return render(request, 'AddSpeciality.html', context)\r\n\r\n\r\ndef addRoom(request):\r\n    room = RoomForm()\r\n    context = {'room': room}\r\n\r\n    if request.method == 'POST':\r\n        room = RoomForm(request.POST)\r\n        if room.is_valid():\r\n            messages.success(request, 'Room has been added successfully.')\r\n            room.save()\r\n        else:\r\n            messages.success(request, 'Room already exists or you have added wrong attributes.')\r\n\r\n    return render(request, 'AddRoom.html', context)\r\n\r\n\r\n# update\r\ndef updateSpeciality(request, pk):\r\n    form = Speciality.objects.get(speciality_id=pk)\r\n    speciality = SpecialityForm(instance=form)\r\n    context = {'speciality': speciality}\r\n    if request.method == 'POST':\r\n        speciality = SpecialityForm(request.POST, instance=form)\r\n        if speciality.is_valid():\r\n            speciality.save()\r\n            return redirect('/speciality/list')\r\n    return render(request, 'AddSpeciality.html', context)\r\n\r\n\r\ndef updateRoom(request, pk):\r\n    form = Room.objects.get(room_id=pk)\r\n    room = RoomForm(instance=form)\r\n    context = {'room': room}\r\n    if request.method == 'POST':\r\n        room = RoomForm(request.POST, instance=form)\r\n        if room.is_valid():\r\n            room.save()\r\n            return redirect('/room/list')\r\n    return render(request, 'AddRoom.html', context)\r\n\r\n\r\ndef updateTeacher(request, pk):\r\n    form = Teacher.objects.get(teacher_id=pk)\r\n    teacher = TeacherForm(instance=form)\r\n    context = {'teacher': teacher}\r\n    if request.method == 'POST':\r\n        teacher = TeacherForm(request.POST, instance=form)\r\n        if teacher.is_valid():\r\n            teacher.save()\r\n            return redirect('/teacher/list')\r\n    return render(request, 'AddTeacher.html', context)\r\n\r\n\r\ndef updateSubject(request, pk):\r\n\r\n    form = Subject.objects.get(subject_id=pk)\r\n    subject = SubjectForm(instance=form)\r\n    context = {'subject': subject}\r\n    if request.method == 'POST':\r\n        subject = SubjectForm(request.POST, instance=form)\r\n        if subject.is_valid():\r\n            subject.save()\r\n            return redirect('/subject/list')\r\n    return render(request, 'AddSubject.html', context)\r\n\r\n\r\ndef registerPage():\r\n    return None\r\n\r\n\r\nclass Logout:\r\n    pass\r\n\r\n\r\ndef loginPage():\r\n    return None\r\n\r\n\r\nclass GenerateTimeTable:\r\n    pass\r\n\r\n\r\n\r\n\r\n\r\ndef deleteSubject(request, pk):\r\n    delete_subject = Subject.objects.get(subject_id=pk)\r\n    context = {'delete_subject': delete_subject}\r\n    if request.method == 'POST':\r\n        delete_subject.delete()\r\n        return redirect('/subject/list')\r\n\r\n    return render(request, 'deleteSubject.html', context)\r\n\r\n\r\ndef deleteTeacher(request, pk):\r\n    delete_teacher = Teacher.objects.get(teacher_id=pk)\r\n    context = {'delete_teacher': delete_teacher}\r\n    if request.method == 'POST':\r\n        delete_teacher.delete()\r\n        return redirect('/teacher/list')\r\n\r\n    return render(request, 'deleteTeacher.html', context)\r\n\r\n\r\ndef deleteRoom(request, pk):\r\n    delete_room = Room.objects.get(room_id=pk)\r\n    context = {'delete_room': delete_room}\r\n    if request.method == 'POST':\r\n        delete_room.delete()\r\n        return redirect('room/list')\r\n\r\n    return render(request, 'deleteRoom.html', context)\r\n\r\ndef deleteSpeciality(request, pk):\r\n    delete_speciality = Room.objects.get(speciality_id=pk)\r\n    context = {'delete_speciality': delete_speciality}\r\n    if request.method == 'POST':\r\n        delete_speciality.delete()\r\n        return redirect('speciality/list')\r\n\r\n    return render(request, 'deleteSpeciality.html', context)\r\n\r\n\r\ndef TimeTableView(request, pk):\r\n    MEETING_TIMES = [\"08:30 - 09:50\",\r\n                     \"10:00 - 11:20\",\r\n                     \"11:40 - 13:00\",\r\n                     \"13:30 - 14:50\",\r\n                     \"15:00 - 16:20\",\r\n                     \"16:30 - 17:50\"]\r\n    DAYS = [\"Monday\",\r\n            \"Tuesday\",\r\n            \"Wednesday\",\r\n            \"Thursday\",\r\n            \"Friday\"]\r\n    timetable = TimeTable.objects.get(timetable_id = pk)\r\n    classes = timetable.class_set.all()\r\n    context={'classes': classes,\r\n             'timeSlots' : MEETING_TIMES,\r\n             'DAYS' : DAYS}\r\n    return render(request, 'timetable-view.html',context)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/timetableCSP/views.py b/timetableCSP/views.py
+--- a/timetableCSP/views.py	(revision 9cf18a80c1e883cc63d73356dca41e61cbd439a3)
++++ b/timetableCSP/views.py	(date 1624116906104)
+@@ -13,6 +13,24 @@
+ from .models import *
+ from django.contrib.auth.decorators import login_required
+ 
++from timetableCSP.models import TimeTable, Class as CL, Room, Subject, Speciality, Teacher
++
++import os
++
++os.environ['DJANGO_SETTINGS_MODULE'] = 'projet.settings'
++
++from django.core.wsgi import get_wsgi_application
++application = get_wsgi_application()
++
++#algorithme
++from algorithme.csp_init import *
++import prettytable
++from algorithme.csp import *
++from algorithme.degree_heuristic import *
++from algorithme.lcv import *
++from algorithme.mrv import *
++from algorithme.forward_checking import *
++from algorithme.constraint_propagation import *
+ 
+ # Create your views here.
+ 
+@@ -169,8 +187,7 @@
+     return None
+ 
+ 
+-class GenerateTimeTable:
+-    pass
++
+ 
+ 
+ 
+@@ -232,4 +249,103 @@
+     context={'classes': classes,
+              'timeSlots' : MEETING_TIMES,
+              'DAYS' : DAYS}
+-    return render(request, 'timetable-view.html',context)
+\ No newline at end of file
++    return render(request, 'timetable-view.html',context)
++
++def GenerateTimeTable(request):
++
++    result_default = backtracking(init_assignment_default(my_csp), my_csp, default_heuristic)
++    # print("Counter for default backtracking: " + str(get_counter_default()))
++
++    result_lcv = backtracking_lcv(init_assignment_lcv(my_csp), my_csp, lcv_heuristic)
++    print("Counter for backtracking with LCV: " + str(get_counter_lcv()))
++
++    result_mrv = mrv_backtracking(init_assignment_mrv(my_csp), my_csp)
++    print("Counter for backtracking with MRV: " + str(get_counter_mrv()))
++
++    result_degree = degree_backtracking(init_assignment_degree(my_csp), my_csp)
++    print("Counter for backtracking with Degree Heuristic: " + str(get_counter_degree()))
++
++    result_forward_check = forward_checking(init_assignment_forw(my_csp), my_csp)
++    print("Counter for backtracking with Forward Checking: " + str(get_counter_forw()))
++
++    result_constraint_propagation = constraint_propagation(init_assignment_con(my_csp), my_csp)
++    print("Counter for backtracking with Constraint Propagation: " + str(get_counter_con()))
++
++    result = result_constraint_propagation
++
++    # ========saving timetable and classes =========================
++
++    TimeSlots = ["08:30 - 09:50",
++                 "10:00 - 11:20",
++                 "11:40 - 13:00",
++                 "13:30 - 14:50",
++                 "15:00 - 16:20",
++                 "16:30 - 17:50"]
++
++    timetable = TimeTable.objects.create()
++    # self._speciality = speciality
++    #         self._subject = subject
++    #         self._teacher = self._subject._teacher
++    #         self._number_of_students = self._subject._number_of_students
++    #         self._room = room
++    #         self._time = time
++    #         self._day = day
++    #         self._type_of_class = type_of_class
++
++    for seance in result.keys():
++
++        cl = CL()
++        cl.room = Room.objects.get(room_name=seance._room[0])
++        cl.speciality = Speciality.objects.get(speciality_name=seance._speciality._name)
++        cl.subject = Subject.objects.get(subject_name=seance._subject._name)
++        cl.teacher = Teacher.objects.get(teacher_name=seance._teacher)
++        cl.number_of_students = seance._number_of_students
++        cl.type_of_class = seance._type_of_class
++        cl.map_key = result[seance]
++
++        cl.timeSlot = TimeSlots[result[seance] % 6]
++        cl.timetable = timetable
++        if result[seance] < 6:
++            cl.day = "Monday"
++        elif result[seance] < 12 and result[seance] >= 6:
++            cl.day = "Tuesday"
++        elif result[seance] < 18 and result[seance] >= 12:
++            cl.day = "Wednesday"
++        elif result[seance] < 24 and result[seance] >= 18:
++            cl.day = "Thursday"
++        elif result[seance] >= 24:
++            cl.day = "Friday"
++        cl.save()
++
++    # ==============================================================
++
++    monday, tuesday, wednesday, thursday, friday = [], [], [], [], []
++    days = [monday, tuesday, wednesday, thursday, friday]
++    for i in result.keys():
++        if result[i] < 6:
++            monday.append((i, result[i]))
++        elif result[i] < 12 and result[i] >= 6:
++            tuesday.append((i, result[i] - 6))
++        elif result[i] < 18 and result[i] >= 12:
++            wednesday.append((i, result[i] - 12))
++        elif result[i] < 24 and result[i] >= 18:
++            thursday.append((i, result[i] - 18))
++        elif result[i] >= 24:
++            friday.append((i, result[i] - 24))
++
++    def print_day(day, l):
++        r = ""
++        for d, n in day:
++            if (l == n):
++                r += str(d) + "\n"
++        return r
++
++    table = prettytable.PrettyTable(['Lesson Time', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'])
++    k = 0
++    for i in range(len(MEETING_TIMES)):
++        table.add_row([MEETING_TIMES[i], print_day(monday, k), print_day(tuesday, k), print_day(wednesday, k),
++                       print_day(thursday, k), print_day(friday, k)])
++        k += 1
++    print(table)
++
++    return redirect('timetable/%d/', timetable.timetable_id)
+\ No newline at end of file
+Index: timetableCSP/urls.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\nfrom django.urls import path,include\r\nfrom . import views\r\n\r\nurlpatterns = [\r\n\r\n    path('teacher/list',views.teachersList, name='list-teacher'),\r\n    path('subject/list', views.subjectsList, name='list-subject'),\r\n    path('room/list', views.roomsList, name='list-room'),\r\n    path('speciality/list', views.specialitiesList, name='list-speciality'),\r\n\r\n\r\n    path('', views.home, name='home'),\r\n    path('login/', views.loginPage, name=\"login\"),\r\n    path('logout/', views.Logout, name=\"logout\"),\r\n    path('register/', views.registerPage, name=\"register\"),\r\n\r\n    path('subject/add', views.addSubject, name='add-subject'),\r\n    path('teacher/add', views.addTeacher, name='add-teacher'),\r\n    path('room/add', views.addRoom, name='add-room'),\r\n    path('speciality/add', views.addSpeciality, name='add-speciality'),\r\n\r\n    path('subject/update/<str:pk>/', views.updateSubject, name='update-subject'),\r\n    path('teacher/update/<str:pk>/', views.updateTeacher, name='update-teacher'),\r\n    path('room/update/<str:pk>/', views.updateRoom, name='update-room'),\r\n    path('speciality/update/<str:pk>/', views.updateSpeciality, name='update-speciality'),\r\n\r\n    path('subject/delete/<str:pk>/', views.deleteSubject, name='delete-subject'),\r\n    path('teacher/delete/<str:pk>/', views.deleteTeacher, name='delete-teacher'),\r\n    path('room/delete/<str:pk>/', views.deleteRoom, name='delete-room'),\r\n    path('speciality/delete/<str:pk>/', views.deleteSpeciality, name='delete-speciality'),\r\n\r\n    #path('timetable/', views.TimeTable, name='timetable'),\r\n    path('generate-timetable/<str:id>/', views.GenerateTimeTable, name='generate-timetable'),\r\n    #path('addweek-info/', views.WeekDayFormView, name='weekday-info'),\r\n\r\n    path('timetable/<str:pk>/', views.TimeTableView, name='timetable')\r\n\r\n\r\n\r\n\r\n]\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/timetableCSP/urls.py b/timetableCSP/urls.py
+--- a/timetableCSP/urls.py	(revision 9cf18a80c1e883cc63d73356dca41e61cbd439a3)
++++ b/timetableCSP/urls.py	(date 1624115727353)
+@@ -32,7 +32,7 @@
+     path('speciality/delete/<str:pk>/', views.deleteSpeciality, name='delete-speciality'),
+ 
+     #path('timetable/', views.TimeTable, name='timetable'),
+-    path('generate-timetable/<str:id>/', views.GenerateTimeTable, name='generate-timetable'),
++    path('generate-timetable/', views.GenerateTimeTable, name='generate-timetable'),
+     #path('addweek-info/', views.WeekDayFormView, name='weekday-info'),
+ 
+     path('timetable/<str:pk>/', views.TimeTableView, name='timetable')

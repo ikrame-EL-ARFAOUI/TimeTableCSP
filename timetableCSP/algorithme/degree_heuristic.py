@@ -1,5 +1,5 @@
-from csp_init import *
-from csp import *
+from timetableCSP.algorithme.csp_init import *
+from timetableCSP.algorithme.csp import *
 csp = my_csp
 
 counter = 0

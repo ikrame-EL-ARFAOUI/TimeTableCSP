@@ -32,7 +32,7 @@ urlpatterns = [
     path('speciality/delete/<str:pk>/', views.deleteSpeciality, name='delete-speciality'),
 
     #path('timetable/', views.TimeTable, name='timetable'),
-    path('generate-timetable/<str:id>/', views.GenerateTimeTable, name='generate-timetable'),
+    path('generate-timetable/', views.GenerateTimeTable, name='generate-timetable'),
     #path('addweek-info/', views.WeekDayFormView, name='weekday-info'),
 
     path('timetable/<str:pk>/', views.TimeTableView, name='timetable')

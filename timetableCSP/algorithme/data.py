@@ -1,7 +1,7 @@
 
 import random as rnd
-from info import *
-from model import *
+from timetableCSP.algorithme.info import *
+from timetableCSP.algorithme.model import *
 
 class Data:
     def __init__(self):

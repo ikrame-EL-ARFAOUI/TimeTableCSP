@@ -1,4 +1,4 @@
-from data import *
+from timetableCSP.algorithme.data import *
 data = Data()
 classes = data._classes
 meeting_times = data.get_domains()

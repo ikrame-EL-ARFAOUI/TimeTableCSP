@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="adding homePage">
+    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/projet/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/constraint_propagation.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/constraint_propagation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/csp.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/csp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/csp_init.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/csp_init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/degree_heuristic.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/degree_heuristic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/forward_checking.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/forward_checking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/lcv.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/lcv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/algorithme/mrv.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/algorithme/mrv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timetableCSP/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/timetableCSP/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,17 +40,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/webfonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\pc\Desktop\EMPLOI\TimeTableCSP\static\webfonts" />
-      <recent name="C:\Users\pc\Desktop\EMPLOI\TimeTableCSP\static\js" />
-      <recent name="C:\Users\pc\Desktop\EMPLOI\TimeTableCSP\static\css" />
-      <recent name="C:\Users\pc\Desktop\EMPLOI\TimeTableCSP\static\media" />
       <recent name="D:\EnsiasProjects\TimeTableCSP\templates" />
+      <recent name="D:\EnsiasProjects\TimeTableCSP\timetableCSP" />
+      <recent name="D:\EnsiasProjects\TimeTableCSP\algorithme" />
+      <recent name="D:\EnsiasProjects\TimeTableCSP" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\EnsiasProjects\TimeTableCSP\timetableCSP\algorithme" />
@@ -59,7 +68,6 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\EnsiasProjects\TimeTableCSP\timetableCSP\algorithme\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -78,8 +86,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623795219405</updated>
-      <workItem from="1624141798236" duration="1754000" />
-      <workItem from="1624144337645" duration="2745000" />
     </task>
     <task id="LOCAL-00001" summary="initializing the project">
       <created>1623800680034</created>
@@ -228,30 +234,8 @@
       <option name="project" value="LOCAL" />
       <updated>1624029457924</updated>
     </task>
-    <task id="LOCAL-00022" summary="adding homePage">
-      <created>1624146143170</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1624146143170</updated>
-    </task>
-    <option name="localTasksCounter" value="23" />
+    <option name="localTasksCounter" value="22" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initializing the project" />
@@ -274,7 +258,6 @@
     <MESSAGE value="teacher, speciality, room forms" />
     <MESSAGE value="update and delete forms" />
     <MESSAGE value="updating data" />
-    <MESSAGE value="adding homePage" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding homePage" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating data" />
   </component>
 </project>

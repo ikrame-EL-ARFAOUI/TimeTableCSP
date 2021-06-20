@@ -1,5 +1,5 @@
 
-from csp_init import *
+from timetableCSP.algorithme.csp_init import *
 
 
 mrv_domains = {}
