@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="adding title and logo">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_06_2021_01_08__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_06_2021_01_08__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/swiper.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/swiper.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/tables.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/tables.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/listSubject.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listSubject.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/timetable-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/timetable-view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -52,7 +46,7 @@
       <recent name="D:\EnsiasProjects\TimeTableCSP\timetableCSP" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.TimeTableCSP">
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
       <module name="TimeTableCSP" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -65,7 +59,6 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\EnsiasProjects\TimeTableCSP\timetableCSP\algorithme\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -73,29 +66,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TimeTableCSP" type="Python.DjangoServer" factoryName="Django server">
-      <module name="TimeTableCSP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
   </component>
@@ -107,8 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623795219405</updated>
-      <workItem from="1624230996463" duration="87000" />
-      <workItem from="1624231791428" duration="2828000" />
     </task>
     <task id="LOCAL-00001" summary="initializing the project">
       <created>1623800680034</created>
@@ -271,11 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1624151963112</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="adding design to lists">
+      <created>1624237771436</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1624237771436</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initializing the project" />
@@ -300,7 +272,8 @@
     <MESSAGE value="updating data" />
     <MESSAGE value="adding 'generate timetable' feature" />
     <MESSAGE value="adding title and logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding title and logo" />
+    <MESSAGE value="adding design to lists" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding design to lists" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
