@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="adding design to subjects list">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="adding design to  add subject">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/add.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/AddSubject.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddSubject.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,10 +246,26 @@
       <option name="project" value="LOCAL" />
       <updated>1624237771436</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="adding design to  add subject">
+      <created>1624272591347</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1624272591348</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
@@ -279,7 +292,8 @@
     <MESSAGE value="adding 'generate timetable' feature" />
     <MESSAGE value="adding title and logo" />
     <MESSAGE value="adding design to lists" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding design to lists" />
+    <MESSAGE value="adding design to  add subject" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding design to  add subject" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
