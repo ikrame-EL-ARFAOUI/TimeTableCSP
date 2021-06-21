@@ -33,7 +33,11 @@ urlpatterns = [
 
     #path('timetable/', views.TimeTable, name='timetable'),
     path('generate-timetable/', views.GenerateTimeTable, name='generate-timetable'),
+
     path('timetable/<str:pk>/', views.TimeTableView, name='timetable'),
+    path('timetable/<str:pk>/teacher/<str:teacher_id>/', views.TimeTableView, name='timetable-teacher'),
+    path('timetable/<str:pk>/speciality/<str:speciality_id>/', views.TimeTableView, name='timetable-speciality'),
+
     path('timetable/list', views.timetablesList, name='list-timetable'),
     path('timetable/update/<str:pk>/', views.updateTimetable, name='update-timetable'),
     path('timetable/delete/<str:pk>/', views.deleteTimetable, name='delete-timetable'),

@@ -227,7 +227,11 @@ def deleteSpeciality(request, pk):
     return render(request, 'deleteSpeciality.html', context)
 
 
-def TimeTableView(request, pk):
+def TimeTableView(request, pk , teacher_id='', speciality_id = ''):
+
+    teachers = T.objects.all()
+    specialities = Sp.objects.all()
+    
     MEETING_TIMES = ["08:30 - 09:50",
                      "10:00 - 11:20",
                      "11:40 - 13:00",
@@ -239,9 +243,33 @@ def TimeTableView(request, pk):
             "Wednesday",
             "Thursday",
             "Friday"]
+    classes = []
     timetable = TimeTable.objects.get(timetable_id = pk)
-    classes = timetable.class_set.all()
+    cls = timetable.class_set.all()
+    for cl in cls :
+        classes.append(cl)
+
+    if teacher_id != '' :
+        classes = []
+        tchr = T.objects.get(teacher_id=teacher_id)
+        cls = timetable.class_set.all()
+        for cl in cls :
+            if cl.teacher == tchr :
+                classes.append(cl)
+
+
+    if speciality_id != '' :
+        classes = []
+        spy = Sp.objects.get(speciality_id=speciality_id)
+        cls = timetable.class_set.all()
+        for cl in cls :
+            if cl.speciality == spy :
+                classes.append(cl)
+        
     context={'classes': classes,
+             'timetable' : timetable,
+             'teachers' : teachers,
+             'specialities':specialities,
              'timeSlots' : MEETING_TIMES,
              'DAYS' : DAYS}
     return render(request, 'timetable-view.html',context)
