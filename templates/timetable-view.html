@@ -8,10 +8,81 @@
     <div class="search">
         <input type="text" class="searchbox" placeholder="Search...">
         <input type="submit" value="Search" class="searchButton">
-       <input type="button" value="Download as PDF"
-            id="btPrint" class="searchButton" onclick="createPDF()" />
+       <!--<input type="button" value="Download as PDF"
+            id="btPrint" class="searchButton" onclick="createPDF()" />-->
+         <input type="button" id="btnExport" value="Download to PDF" class="searchButton"onclick="Export()" />
 
     </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript">
+        function Export() {
+            html2canvas(document.getElementById('tab'), {
+                onrendered: function (canvas) {
+                    var data = canvas.toDataURL();
+                    var docDefinition = {
+                        content: [{
+                            image: data,
+                            width: 500
+                        }]
+                    };
+                    pdfMake.createPdf(docDefinition).download("Table.pdf");
+                }
+            });
+        }
+    </script>
+
+<!--
+     <input type="button" onclick="generate()" value="Export To PDF" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script>
+<script type="text/javascript">
+function generate() {
+    var doc = new jsPDF('p', 'pt', 'letter');
+    var htmlstring = '';
+    var tempVarToCheckPageHeight = 0;
+    var pageHeight = 0;
+    pageHeight = doc.internal.pageSize.height;
+    specialElementHandlers = {
+        // element with id of "bypass" - jQuery style selector
+        '#bypassme': function(element, renderer) {
+            // true = "handled elsewhere, bypass text extraction"
+            return true
+        }
+    };
+    margins = {
+        top: 150,
+        bottom: 60,
+        left: 40,
+        right: 40,
+        width: 600
+    };
+    var y = 20;
+    doc.setLineWidth(2);
+    doc.text(200, y = y + 30, "TOTAL MARKS OF STUDENTS");
+    doc.autoTable({
+        html: '#tab',
+        startY: 70,
+        theme: 'grid',
+        columnStyles: {
+            0: {
+                cellWidth: 180,
+            },
+            1: {
+                cellWidth: 180,
+            },
+            2: {
+                cellWidth: 180,
+            }
+        },
+        styles: {
+            minCellHeight: 40
+        }
+    })
+    doc.save('Marks_Of_Students.pdf');
+}
+</script>-->
 
 <!--
 
@@ -370,7 +441,7 @@ body{
 }
 
 </style>
-<script>
+<!--<script>
     function createPDF() {
         var sTable = document.getElementById('tab').innerHTML;
 
@@ -395,6 +466,6 @@ body{
 
         win.print();    // PRINT THE CONTENTS.
     }
-</script>
+</script>-->
 
 {% endblock %}
