@@ -14,8 +14,11 @@
 
 
 	<div class="table-responsive-lg">
-        <table class="table ">
-            <thead class="thead-dark">
+
+
+        <table class="table-primary">
+        <table class="table table-primary table-hover">
+            <thead class="thead-primary">
 			<tr>
                 <div class="header__item filter__link" >
                    <th scope="col" class="text-center">Subject ID</th>
@@ -58,14 +61,14 @@
                         <th scope="row" class="table-light text-center">{{ subject.subject_id }}</th>
                     
 					
-						<th scope="row" class="table-dark text-center"  >{{ subject.subject_name }}</th>
+						<th scope="row" class="table-primary text-center"  >{{ subject.subject_name }}</th>
                        
 						<th scope="row" class="table-light text-center"> {{ subject.subject_number_of_students}}</th>
-						<th scope="row" class="table-dark text-center"> {{ subject.subject_groups}}</th>
+						<th scope="row" class="table-primary text-center"> {{ subject.subject_groups}}</th>
                   
                         <th scope="row" class="table-light text-center"> {{ subject.teacher}}</th>
                    
-                        <th scope="row" class="table-dark text-center"> <a href="{% url 'update-subject' subject.subject_id %}" class="btn btn-sm btn-info">Update</a></th>
+                        <th scope="row" class="table-primary text-center"> <a href="{% url 'update-subject' subject.subject_id %}" class="btn btn-sm btn-info">Update</a></th>
                    
                         <th scope="row" class="table-light text-center"> <a href="{% url 'delete-subject' subject.subject_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
                 
@@ -76,7 +79,9 @@
             </tbody>
         </table>
 </div>
+
     </div>
+
 
 
 {% endblock %}
