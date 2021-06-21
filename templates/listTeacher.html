@@ -8,56 +8,66 @@
     <div class="search">
         <input type="text" class="searchbox" placeholder="Search...">
         <input type="submit" value="Search" class="searchButton">
-        <a href="{% url 'add-teacher' %}"><button class="searchButton">Add </button></a>
+        <a href="{% url 'add-teacher' %}"><button class="searchButton">Add Teacher </button></a>
 
     </div>
 
 
+	<div class="table-responsive-lg">
 
-        <div class="table  text-center">
-            <div class="table-header">
 
-                <div class="header__item filter__link">
-                  Teacher id
-
-                </div>
-                <div class="header__item filter__link">
-                   Teacher Name
-
-                </div>
-                <div class="header__item filter__link">
-                    Update
+        <table class="table-primary">
+        <table class="table table-primary table-hover">
+            <thead class="thead-primary">
+			<tr>
+                <div class="header__item filter__link" >
+                   <th scope="col" class="text-center">Teacher ID</th>
 
                 </div>
                 <div class="header__item filter__link">
-                    Delete
+                  <th class="text-center" scope="col">Teacher Name</th>
 
                 </div>
-            </div>
-            <div class="tab-content">
+
+                <div class="header__item filter__link">
+                    <th class="text-center" scope="col"> Update</th>
+
+                </div>
+                <div class="header__item filter__link">
+                     <th class="text-center" scope="col">Delete</th>
+
+                </div>
+			</tr>
+            </thead>
+
+
+
                 {% for teacher in teachers %}
-                <div class="table-row text-center">
 
-                    
-                    <div class="table-data">
-                        {{ teacher.teacher_id}}
-                    </div>
-                    <div class="table-data">
-                        {{ teacher.teacher_name }}
-                    </div>
-   
-                    <div class="table-data">
-                       <a href="{% url 'update-teacher' teacher.teacher_id %}" class="btn btn-sm btn-info">Update</a>
-                    </div>
-                    <div class="table-data">
-                       <a href="{% url 'delete-teacher' teacher.teacher_id %}" class="btn btn-sm btn-danger" >Remove</a>
-                    </div>
+				<tr>
 
-                </div>
+
+                        <th scope="row" class="table-light text-center">{{ teacher.teacher_id}}</th>
+
+
+						<th scope="row" class="table-primary text-center"  >{{ teacher.teacher_name}}</th>
+
+
+                        <th scope="row" class="table-light text-center"> <a href="{% url 'update-teacher' teacher.teacher_id %}" class="btn btn-sm btn-info">Update</a></th>
+
+                        <th scope="row" class="table-primary text-center"> <a href="{% url 'delete-teacher' teacher.teacher_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
+
+					</tr>
+
+
                 {% endfor %}
-            </div>
-        </div>
+            </tbody>
+        </table>
+</div>
 
     </div>
+
+
 
 {% endblock %}
+

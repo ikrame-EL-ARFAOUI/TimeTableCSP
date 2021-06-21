@@ -14,21 +14,22 @@
 
 
 	<div class="table-responsive-lg">
-        <table class="table ">
-            <thead class="thead-dark">
+
+
+        <table class="table-primary">
+        <table class="table table-primary table-hover">
+            <thead class="thead-primary">
 			<tr>
-                <div class="header__item filter__link">
-                  <th class="text-center" scope="col">Speciality ID</th>
-
-                </div>
-
                 <div class="header__item filter__link" >
-                   <th scope="col" class="text-center">Speciality Name</th>
+                   <th scope="col" class="text-center">Speciality ID</th>
 
                 </div>
-
                 <div class="header__item filter__link">
-                  <th class="text-center" scope="col">Speciality Subjects</th>
+                  <th class="text-center" scope="col">Speciality Name</th>
+
+                </div>
+                <div class="header__item filter__link">
+                   <th class="text-center" scope="col">Speciality Subjects</th>
 
                 </div>
 
@@ -40,40 +41,43 @@
                      <th class="text-center" scope="col">Delete</th>
 
                 </div>
-
-			</tr>	
+			</tr>
             </thead>
-			
-            
-			
-                {% for speciality in specialities %}
-				
-				    <tr>
-                
-					
-                        <th scope="row" class="table-dark text-center">{{ speciality.speciality_id }}</th>
-                    					
-						<th scope="row" class="table-light text-center"  >{{ speciality.speciality_name }}</th>
 
-                        <th scope="row" class="table-dark text-center"  >
+
+
+                {% for speciality in specialities %}
+
+				<tr>
+
+
+                        <th scope="row" class="table-light text-center">{{ speciality.speciality_id }}</th>
+
+
+						<th scope="row" class="table-primary text-center"  >{{ speciality.speciality_name }}</th>
+
+						<th scope="row" class="table-light text-center">
                             {% for sub in speciality.subjects.all %}
                             <p>{{ sub.subject_name }}</p>
                             {% endfor %}
                         </th>
-                  
-                        <th scope="row" class="table-light text-center"> <a href="{% url 'update-speciality' speciality.speciality_id %}" class="btn btn-sm btn-info">Update</a></th>
-                   
-                        <th scope="row" class="table-dark text-center"> <a href="{% url 'delete-speciality' speciality.speciality_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
 
+
+                        <th scope="row" class="table-primary text-center"> <a href="{% url 'update-speciality' speciality.speciality_id %}" class="btn btn-sm btn-info">Update</a></th>
+
+                        <th scope="row" class="table-light text-center"> <a href="{% url 'delete-speciality' speciality.speciality_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
 
 					</tr>
-				
-                
+
+
                 {% endfor %}
             </tbody>
         </table>
 </div>
+
     </div>
 
 
+
 {% endblock %}
+

@@ -8,71 +8,76 @@
     <div class="search">
         <input type="text" class="searchbox" placeholder="Search...">
         <input type="submit" value="Search" class="searchButton">
-        <a href="{% url 'add-teacher' %}"><button class="searchButton">Add </button></a>
+        <a href="{% url 'generate-timetable' %}"><button class="searchButton">Generate New Timetable </button></a>
 
     </div>
 
 
+	<div class="table-responsive-lg">
 
-        <div class="table  text-center">
-            <div class="table-header">
 
-                <div class="header__item filter__link">
-                  Timetable id
-
-                </div>
-                <div class="header__item filter__link">
-                   Timetable Name
-
-                </div>
-                <div class="header__item filter__link">
-                   created on
+        <table class="table-primary">
+        <table class="table table-primary table-hover">
+            <thead class="thead-primary">
+			<tr>
+                <div class="header__item filter__link" >
+                   <th scope="col" class="text-center">Timetable ID</th>
 
                 </div>
                 <div class="header__item filter__link">
-                    View Timetable
+                  <th class="text-center" scope="col">TimetableName</th>
 
                 </div>
                 <div class="header__item filter__link">
-                    Update
+                   <th class="text-center" scope="col">Created On</th>
+
+                </div>
+               <div class="header__item filter__link">
+                    <th class="text-center" scope="col"> view Timetable</th>
 
                 </div>
                 <div class="header__item filter__link">
-                    Delete
+                    <th class="text-center" scope="col"> Update name</th>
 
                 </div>
-            </div>
-            <div class="tab-content">
+                <div class="header__item filter__link">
+                     <th class="text-center" scope="col">Delete</th>
+
+                </div>
+			</tr>
+            </thead>
+
+
+
                 {% for timetable in timetables %}
-                <div class="table-row text-center">
 
-                    
-                    <div class="table-data">
-                        {{ timetable.timetable_id}}
-                    </div>
-                    <div class="table-data">
-                        {{ timetable.timetable_name }}
-                    </div>
+				<tr>
 
-                    <div class="table-data">
-                        {{ timetable.date_creation }}
-                    </div>
 
-                    <div class="table-data">
-                       <a href="{% url 'timetable' timetable.timetable_id %}" class="btn btn-sm btn-info">View timetable</a>
-                    </div>
-                    <div class="table-data">
-                       <a href="{% url 'update-timetable' timetable.timetable_id %}" class="btn btn-sm btn-warning">Update Name</a>
-                    </div>
-                    <div class="table-data">
-                       <a href="{% url 'delete-timetable' timetable.timetable_id %}" class="btn btn-sm btn-danger" >Remove</a>
-                    </div>
+                        <th scope="row" class="table-light text-center">{{ timetable.timetable_id}}</th>
 
-                </div>
+
+						<th scope="row" class="table-primary text-center"  >{{ timetable.timetable_name}}</th>
+
+						<th scope="row" class="table-light text-center"> {{ timetable.date_creation }}</th>
+
+                        <th scope="row" class="table-primary text-center"> <a href="{% url 'timetable' timetable.timetable_id %}" class="btn btn-sm btn-info">View Timetable</a></th>
+
+
+                        <th scope="row" class="table-light text-center"> <a href="{% url 'update-timetable' timetable.timetable_id%}" class="btn btn-sm btn-warning">Update Name</a></th>
+
+                        <th scope="row" class="table-primary text-center"> <a href="{% url 'delete-timetable' timetable.timetable_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
+
+					</tr>
+
+
                 {% endfor %}
-            </div>
-        </div>
+            </tbody>
+        </table>
+</div>
 
     </div>
+
+
 
 {% endblock %}

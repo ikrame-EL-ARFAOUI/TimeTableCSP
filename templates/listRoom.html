@@ -14,15 +14,18 @@
 
 
 	<div class="table-responsive-lg">
-        <table class="table ">
-            <thead class="thead-dark">
+
+
+        <table class="table-primary">
+        <table class="table table-primary table-hover">
+            <thead class="thead-primary">
 			<tr>
                 <div class="header__item filter__link" >
                    <th scope="col" class="text-center">Room ID</th>
 
                 </div>
                 <div class="header__item filter__link">
-                  <th class="text-center" scope="col">Room Name</th>
+                  <th class="text-center" scope="col">Room name</th>
 
                 </div>
                 <div class="header__item filter__link">
@@ -38,35 +41,39 @@
                      <th class="text-center" scope="col">Delete</th>
 
                 </div>
-			</tr>	
+			</tr>
             </thead>
-			
-            
-			
+
+
+
                 {% for room in rooms %}
-				
+
 				<tr>
-                
-					
+
+
                         <th scope="row" class="table-light text-center">{{ room.room_id }}</th>
-                    
-					
-						<th scope="row" class="table-dark text-center"  >{{ room.room_name }}</th>
-                       
+
+
+						<th scope="row" class="table-primary text-center"  >{{ room.room_name }}</th>
+
 						<th scope="row" class="table-light text-center"> {{ room.room_max_students}}</th>
-                   
-                        <th scope="row" class="table-dark text-center"> <a href="{% url 'update-room' room.room_id %}" class="btn btn-sm btn-info">Update</a></th>
-                   
-                        <th scope="row" class="table-light text-center"> <a href="{% url 'delete-room' room.room_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
-                
+
+
+                        <th scope="row" class="table-primary text-center"> <a href="{% url 'update-room'  room.room_id  %}" class="btn btn-sm btn-info">Update</a></th>
+
+                        <th scope="row" class="table-light text-center"> <a href="{% url 'delete-room' room.room_id  %}" class="btn btn-sm btn-danger" >Remove</a></th>
+
 					</tr>
-				
-                
+
+
                 {% endfor %}
             </tbody>
         </table>
 </div>
+
     </div>
 
 
+
 {% endblock %}
+
