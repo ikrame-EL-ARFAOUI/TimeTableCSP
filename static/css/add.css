@@ -73,7 +73,7 @@
     text-transform: uppercase;
     padding-top: 12px;
     color: white;
-    background: black;
+    background: skyblue;
     border-radius: 10px 10px 0 0 ;
     height: 15%;
 }
@@ -100,13 +100,13 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bolder;
-	color: black ;
+	color: skyblue ;
 	text-align: center;
 	background: none;
 	margin-left: 25%;
 	margin-right: -30px;
 	margin-top: 20px;
-	border-color: black ;
+	border-color: skyblue ;
 	border-radius: 30px ;
 	border-style: solid;
 	border-width: 3px ;
@@ -114,7 +114,7 @@
 
 }
 .saveButton:hover{
-    background: black;
+    background: skyblue;
     color: white;
 }
 
@@ -146,7 +146,7 @@
     padding:20px 20px 20px 20px !important;
 
     text-align: center !important;
-    border: 2px solid black !important;
+    border: 2px solid skyblue !important;
 
     background: none !important;
     border-radius: 30px !important;

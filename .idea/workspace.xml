@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="">
+    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="adding design to subjects list">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/timetable-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/timetable-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddSubject.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddSubject.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\EnsiasProjects\TimeTableCSP\timetableCSP\algorithme\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -248,6 +251,9 @@
     </task>
     <option name="localTasksCounter" value="25" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initializing the project" />
