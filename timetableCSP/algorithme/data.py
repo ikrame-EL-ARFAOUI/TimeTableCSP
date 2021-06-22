@@ -1,8 +1,9 @@
 
 import random as rnd
-from timetableCSP.algorithme.info import *
+from timetableCSP.algorithme.info import init_data,ROOMS,INSTRUCTORS,SUBJECTS,SPECIALITIES,DAYS,MEETING_TIMES
 from timetableCSP.algorithme.model import *
 
+init_data()
 class Data:
     def __init__(self):
         self._days = DAYS
@@ -21,7 +22,10 @@ class Data:
             name = s["name"]
             num = s["number_of_students"]
             gr = s["groups"]
-            tea = s["teacher"]
+            tea = None
+            for teac in INSTRUCTORS:
+                if teac["name"] == s["teacher"]:
+                    tea = teac
             subj.append(Subject(name, num,gr, tea))
         return subj
 

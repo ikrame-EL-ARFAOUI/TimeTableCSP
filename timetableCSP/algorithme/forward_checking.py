@@ -1,4 +1,5 @@
 from timetableCSP.algorithme.csp_init import *
+from timetableCSP.algorithme.mrv import mrv_domains
 csp = my_csp
 
 counter = 0
@@ -52,7 +53,7 @@ def forward_checking(assignment,csp):
         else: 
           assignment[var] = None
           var._room = None
-          undo_domains(assignment,csp)
+          undo(assignment,csp)
   return FAILURE
 
 

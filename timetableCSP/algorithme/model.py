@@ -13,12 +13,13 @@ class Class:
 
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     def __str__(self):
-        return str(self._speciality._name) + "," + str(self._subject._name) + "\n" + str(self._teacher) + "," + str(self._type_of_class) + "," + str(self._room[0]) + " \n"
+        return str(self._speciality._name) + "," + str(self._subject._name) + "\n" + str(self._teacher["name"]) + "," + str(self._type_of_class) + "," + str(self._room[0]) + " \n"
 
 class Teacher:
-    def __init__(self, name, subject):
+    def __init__(self, name, subject,freeTime):
         self._name = name
         self._subject = subject
+        self._freeTime = freeTime
     def __str__(self): return self._name
 
 
@@ -28,6 +29,7 @@ class Subject:
 		self._number_of_students = number_of_students
 		self._groups = groups
 		self._teacher = teacher
+        
 
 
 class Room:

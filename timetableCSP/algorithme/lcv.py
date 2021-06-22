@@ -83,13 +83,13 @@ def backtracking_lcv(assignment, csp, heuristic):
 def lcv_heuristic(assignment):
   teach = {}
   for i in csp[VARIABLES]:
-    teach[i._teacher] = 0
+    teach[i._teacher["name"]] = 0
   res = []
   for i in csp[VARIABLES]:
     if (assignment[i] is None):
-      teach[i._teacher]+=1
+      teach[i._teacher["name"]]+=1
       res.append(i)
-  res.sort(key=lambda l: teach[l._teacher])
+  res.sort(key=lambda l: teach[l._teacher["name"]])
   return res[0]
 
 

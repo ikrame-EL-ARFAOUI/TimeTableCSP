@@ -52,7 +52,16 @@ def same_teacher(assignment):
   return False
 
 
-
+def teacher_free_time(assignment):
+  arr = get_var(assignment)
+  if len(arr) == 1:
+    return False
+  for i in arr:
+      #print(i)
+      for  j in i._teacher["freeTime"] :
+        if assignment[i] == j :
+          return True
+  return False
 
 
 
@@ -85,5 +94,5 @@ def groups_conflict(assignment):
 
 my_csp = {VARIABLES: classes,
           DOMAINS: meeting_times,
-          CONSTRAINTS: [same_teacher, same_spec, groups_conflict]
+          CONSTRAINTS: [same_teacher, same_spec,teacher_free_time, groups_conflict]
           }

@@ -1,4 +1,5 @@
 from timetableCSP.algorithme.csp_init import *
+from timetableCSP.algorithme.mrv import mrv_domains
 csp = my_csp
 
 counter = 0
@@ -54,7 +55,7 @@ def constraint_propagation(assignment,csp):
           else: 
             assignment[var] = None
             var._room = None
-            undo_domains(assignment,csp)
+            undo(assignment,csp)
         else:
           assignment[var] = None
   return FAILURE
