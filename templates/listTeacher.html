@@ -28,6 +28,10 @@
                   <th class="text-center" scope="col">Teacher Name</th>
 
                 </div>
+                <div class="header__item filter__link">
+                  <th class="text-center" scope="col">Teacher Freetime</th>
+
+                </div>
 
                 <div class="header__item filter__link">
                     <th class="text-center" scope="col"> Update</th>
@@ -52,10 +56,16 @@
 
 						<th scope="row" class="table-primary text-center"  >{{ teacher.teacher_name}}</th>
 
+                        <th scope="row" class="table-light text-center"  >
+                            {% for frtime in teacher.freetimes.all %}
+                            <p>{{ frtime.domaine }}</p>
+                            {% endfor %}
+                        </th>
 
-                        <th scope="row" class="table-light text-center"> <a href="{% url 'update-teacher' teacher.teacher_id %}" class="btn btn-sm btn-info">Update</a></th>
 
-                        <th scope="row" class="table-primary text-center"> <a href="{% url 'delete-teacher' teacher.teacher_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
+                        <th scope="row" class="table-primary text-center"> <a href="{% url 'update-teacher' teacher.teacher_id %}" class="btn btn-sm btn-info">Update</a></th>
+
+                        <th scope="row" class="table-light text-center"> <a href="{% url 'delete-teacher' teacher.teacher_id %}" class="btn btn-sm btn-danger" >Remove</a></th>
 
 					</tr>
 
