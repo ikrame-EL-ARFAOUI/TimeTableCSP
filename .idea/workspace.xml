@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="adding design to  add subject">
+    <list default="true" id="4c9fe2ab-4d77-4214-b0e5-f59aaa7be117" name="Default Changelist" comment="update pdf download">
+      <change afterPath="$PROJECT_DIR$/.idea/TimeTableCSP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddRoom.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddRoom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddSpeciality.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddSpeciality.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddTeacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddTeacher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/listTeacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/listTeacher.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +40,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TimeTableCSP-PFA/TimeTableCSP" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.3431772" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -246,32 +258,62 @@
       <option name="project" value="LOCAL" />
       <updated>1624237771436</updated>
     </task>
-    <task id="LOCAL-00025" summary="adding design to  add subject">
-      <created>1624272591347</created>
+    <task id="LOCAL-00025" summary="update pdf download">
+      <created>1624286365083</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1624272591348</updated>
+      <updated>1624286365083</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update pdf download">
+      <created>1624287190521</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1624287190521</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add the feature of 'view timetable by teacher or by speciality'">
+      <created>1624317444370</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1624317444370</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update pdf download">
+      <created>1624317877645</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1624317877645</updated>
+    </task>
+    <task id="LOCAL-00029" summary="update pdf download feature">
+      <created>1624320285079</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1624320285110</updated>
+    </task>
+    <task id="LOCAL-00030" summary="adding the 'teacher freetime constraint' to the algorithme">
+      <created>1624406162268</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1624406162299</updated>
+    </task>
+    <task id="LOCAL-00031" summary="adding freetime the forms, lists and models">
+      <created>1624406257369</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1624406257369</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initializing the project" />
-    <MESSAGE value="add db" />
-    <MESSAGE value="adding urls mapping" />
     <MESSAGE value="add views" />
     <MESSAGE value="views" />
     <MESSAGE value="venv" />
@@ -292,15 +334,19 @@
     <MESSAGE value="adding 'generate timetable' feature" />
     <MESSAGE value="adding title and logo" />
     <MESSAGE value="adding design to lists" />
-    <MESSAGE value="adding design to  add subject" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding design to  add subject" />
+    <MESSAGE value="add the feature of 'view timetable by teacher or by speciality'" />
+    <MESSAGE value="update pdf download" />
+    <MESSAGE value="update pdf download feature" />
+    <MESSAGE value="adding the 'teacher freetime constraint' to the algorithme" />
+    <MESSAGE value="adding freetime the forms, lists and models" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding freetime the forms, lists and models" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/timetableCSP/views.py</url>
-          <line>97</line>
+          <line>101</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
