@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+from django.shortcuts import get_object_or_404
 from .forms import *
 from django.contrib import messages
+import subprocess
 
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
@@ -24,6 +25,9 @@ application = get_wsgi_application()
 
 #algorithme
 from  timetableCSP.algorithme.csp_init import *
+
+from  timetableCSP.algorithme.data import *
+from  timetableCSP.algorithme.info import init_data,ROOMS,INSTRUCTORS,SUBJECTS,SPECIALITIES
 import prettytable
 from timetableCSP.algorithme.csp import  *
 from timetableCSP.algorithme.degree_heuristic import *
@@ -134,7 +138,7 @@ def updateSpeciality(request, pk):
         speciality = SpecialityForm(request.POST, instance=form)
         if speciality.is_valid():
             speciality.save()
-            return redirect('/speciality/list')
+            return redirect('list-speciality')
     return render(request, 'AddSpeciality.html', context)
 
 
@@ -146,7 +150,7 @@ def updateRoom(request, pk):
         room = RoomForm(request.POST, instance=form)
         if room.is_valid():
             room.save()
-            return redirect('/room/list')
+            return redirect('list-room')
     return render(request, 'AddRoom.html', context)
 
 
@@ -158,7 +162,7 @@ def updateTeacher(request, pk):
         teacher = TeacherForm(request.POST, instance=form)
         if teacher.is_valid():
             teacher.save()
-            return redirect('/teacher/list')
+            return redirect('list-teacher')
     return render(request, 'AddTeacher.html', context)
 
 
@@ -171,7 +175,7 @@ def updateSubject(request, pk):
         subject = SubjectForm(request.POST, instance=form)
         if subject.is_valid():
             subject.save()
-            return redirect('/subject/list')
+            return redirect('list-subject')
     return render(request, 'AddSubject.html', context)
 
 
@@ -193,7 +197,7 @@ def deleteSubject(request, pk):
     context = {'delete_subject': delete_subject}
     if request.method == 'POST':
         delete_subject.delete()
-        return redirect('/subject/list')
+        return redirect('list-subject')
 
     return render(request, 'deleteSubject.html', context)
 
@@ -203,7 +207,7 @@ def deleteTeacher(request, pk):
     context = {'delete_teacher': delete_teacher}
     if request.method == 'POST':
         delete_teacher.delete()
-        return redirect('/teacher/list')
+        return redirect('list-teacher')
 
     return render(request, 'deleteTeacher.html', context)
 
@@ -213,7 +217,7 @@ def deleteRoom(request, pk):
     context = {'delete_room': delete_room}
     if request.method == 'POST':
         delete_room.delete()
-        return redirect('room/list')
+        return redirect('list-room')
 
     return render(request, 'deleteRoom.html', context)
 
@@ -222,12 +226,13 @@ def deleteSpeciality(request, pk):
     context = {'delete_speciality': delete_speciality}
     if request.method == 'POST':
         delete_speciality.delete()
-        return redirect('speciality/list')
+        return redirect('list-speciality')
 
     return render(request, 'deleteSpeciality.html', context)
 
 
 def TimeTableView(request, pk , teacher_id='', speciality_id = ''):
+
 
     teachers = T.objects.all()
     specialities = Sp.objects.all()
@@ -265,7 +270,7 @@ def TimeTableView(request, pk , teacher_id='', speciality_id = ''):
         for cl in cls :
             if cl.speciality == spy :
                 classes.append(cl)
-        
+
     context={'classes': classes,
              'timetable' : timetable,
              'teachers' : teachers,
@@ -275,6 +280,10 @@ def TimeTableView(request, pk , teacher_id='', speciality_id = ''):
     return render(request, 'timetable-view.html',context)
 
 def GenerateTimeTable(request):
+    
+    
+    print(SPECIALITIES)
+    print(INSTRUCTORS)
 
     result_default = backtracking(init_assignment_default(my_csp), my_csp, default_heuristic)
     # print("Counter for default backtracking: " + str(get_counter_default()))
@@ -321,7 +330,8 @@ def GenerateTimeTable(request):
         cl.room = R.objects.get(room_name=seance._room[0])
         cl.speciality = Sp.objects.get(speciality_name=seance._speciality._name)
         cl.subject = Sj.objects.get(subject_name=seance._subject._name)
-        cl.teacher = T.objects.get(teacher_name=seance._teacher)
+
+        cl.teacher = T.objects.get(teacher_name=seance._teacher["name"])
         cl.number_of_students = seance._number_of_students
         cl.type_of_class = seance._type_of_class
         cl.map_key = result[seance]
@@ -375,7 +385,7 @@ def GenerateTimeTable(request):
 
 
 def timetablesList(request):
-    timetables = TimeTable.objects.all()
+    timetables = TimeTable.objects.all().order_by('-date_creation')
     context = {'timetables': timetables}
     return render(request, 'listTimetables.html', context)
 

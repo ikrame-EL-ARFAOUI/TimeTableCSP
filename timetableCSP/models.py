@@ -5,6 +5,55 @@ from django.db import models
 from multiselectfield import MultiSelectField
 
 
+
+    
+class FreeTime(models.Model):
+   
+    DOMAINS = (
+        ("Monday,08:30 - 09:50","Monday,08:30 - 09:50"),
+        ("Monday,10:00 - 11:20","Monday,10:00 - 11:20"),
+        ("Monday,11:40 - 13:00","Monday,11:40 - 13:00"),
+        ("Monday,13:30 - 14:50","Monday,13:30 - 14:50"),
+        ("Monday,15:00 - 16:20","Monday,15:00 - 16:20"),
+        ("Monday,16:30 - 17:50","Monday,16:30 - 17:50"),
+
+        ("Tuesday,08:30 - 09:50", "Tuesday,08:30 - 09:50"),
+        ("Tuesday,10:00 - 11:20", "Tuesday,10:00 - 11:20"),
+        ("Tuesday,11:40 - 13:00", "Tuesday,11:40 - 13:00"),
+        ("Tuesday,13:30 - 14:50", "Tuesday,13:30 - 14:50"),
+        ("Tuesday,15:00 - 16:20", "Tuesday,15:00 - 16:20"),
+        ("Tuesday,16:30 - 17:50", "Tuesday,16:30 - 17:50"),
+
+        ("Wednesday,08:30 - 09:50", "Wednesday,08:30 - 09:50"),
+        ("Wednesday,10:00 - 11:20", "Wednesday,10:00 - 11:20"),
+        ("Wednesday,11:40 - 13:00", "Wednesday,11:40 - 13:00"),
+        ("Wednesday,13:30 - 14:50", "Wednesday,13:30 - 14:50"),
+        ("Wednesday,15:00 - 16:20", "Wednesday,15:00 - 16:20"),
+        ("Wednesday,16:30 - 17:50", "Wednesday,16:30 - 17:50"),
+
+        ("Thursday,08:30 - 09:50", "Thursday,08:30 - 09:50"),
+        ("Thursday,10:00 - 11:20", "Thursday,10:00 - 11:20"),
+        ("Thursday,11:40 - 13:00", "Thursday,11:40 - 13:00"),
+        ("Thursday,13:30 - 14:50", "Thursday,13:30 - 14:50"),
+        ("Thursday,15:00 - 16:20", "Thursday,15:00 - 16:20"),
+        ("Thursday,16:30 - 17:50", "Thursday,16:30 - 17:50"),
+
+        ("Friday,08:30 - 09:50", "Friday,08:30 - 09:50"),
+        ("Friday,10:00 - 11:20", "Friday,10:00 - 11:20"),
+        ("Friday,11:40 - 13:00", "Friday,11:40 - 13:00"),
+        ("Friday,13:30 - 14:50", "Friday,13:30 - 14:50"),
+        ("Friday,15:00 - 16:20", "Friday,15:00 - 16:20"),
+        ("Friday,16:30 - 17:50", "Friday,16:30 - 17:50"),
+        
+    )
+    
+    freetime_id = models.AutoField(primary_key=True)
+    freetime_key = models.IntegerField(null=True)
+    domaine = models.CharField(max_length=2000, null=True, choices=DOMAINS)
+    def __str__(self):
+        return str(self.freetime_key) + "," + self.domaine
+    
+    
 class Room(models.Model):
     room_id = models.AutoField(primary_key=True)
     room_name = models.CharField(max_length=2000, null=True)
@@ -17,6 +66,7 @@ class Room(models.Model):
 class Teacher(models.Model):
     teacher_id = models.AutoField(primary_key=True)
     teacher_name = models.CharField(max_length=2000, null=True)
+    freetimes = models.ManyToManyField(FreeTime, null=True)
 
     def __str__(self):
         return self.teacher_name
@@ -70,6 +120,7 @@ class Class(models.Model):
     #     ('lecture', 'lecture'),
     #     ('practice', 'practice')
     # )
+
     TimeSlots = (("08:30 - 09:50", "08:30 - 09:50"),
                  ("10:00 - 11:20", "10:00 - 11:20"),
                  ("11:40 - 13:00", "11:40 - 13:00"),

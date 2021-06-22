@@ -20,7 +20,7 @@ class SubjectForm(forms.ModelForm):
 class TeacherForm(forms.ModelForm):
     class Meta:
         model = Teacher
-        fields = ['teacher_name']
+        fields = ['teacher_name','freetimes']
 
 
 class RoomForm(forms.ModelForm):

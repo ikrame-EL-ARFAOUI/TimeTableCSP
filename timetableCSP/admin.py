@@ -8,3 +8,5 @@ admin.site.register(Subject)
 admin.site.register(Speciality)
 admin.site.register(TimeTable)
 admin.site.register(Class)
+admin.site.register(FreeTime)
+
